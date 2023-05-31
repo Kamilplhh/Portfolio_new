@@ -11,10 +11,37 @@
 
 <body>
     @section('navbar')
-        <marquee scrollamount="10" class="navbar top" direction="left">Linkedin github instagram</marquee>
-        <marquee scrollamount="10" class="navbar bottom" direction="right">Linkedin github instagram</marquee>
-        <marquee scrollamount="10" class="navbar left" direction="up">Linkedin github instagram</marquee>
-        <marquee scrollamount="10" class="navbar right" direction="down">Linkedin github instagram</marquee>
+    <marquee scrollamount="12" class="navbar top" direction="left">
+        <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/"> <i class="fa-brands fa-linkedin"></i> LINKEDIN <i class="fa-brands fa-linkedin"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://github.com/Kamilplhh"> <i class="fa-brands fa-github"></i> GITHUB <i class="fa-brands fa-github"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://www.instagram.com/kamil_plhh/"> <i class="fa-brands fa-instagram"></i> INSTAGRAM <i class="fa-brands fa-instagram"></i> </a>
+    </marquee>
+
+    <marquee scrollamount="10" class="navbar bottom" direction="right">
+        <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/"> <i class="fa-brands fa-linkedin"></i> LINKEDIN <i class="fa-brands fa-linkedin"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://github.com/Kamilplhh"> <i class="fa-brands fa-github"></i> GITHUB <i class="fa-brands fa-github"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://www.instagram.com/kamil_plhh/"> <i class="fa-brands fa-instagram"></i> INSTAGRAM <i class="fa-brands fa-instagram"></i> </a>
+    </marquee>
+
+    <marquee scrollamount="12" class="navbar left" direction="down">
+        <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/"> <i class="fa-brands fa-linkedin fa-rotate-90"></i> LINKEDIN <i class="fa-brands fa-linkedin fa-rotate-90"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://github.com/Kamilplhh"> <i class="fa-brands fa-github fa-rotate-90"></i> GITHUB <i class="fa-brands fa-github fa-rotate-90"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://www.instagram.com/kamil_plhh/"> <i class="fa-brands fa-instagram fa-rotate-90"></i> INSTAGRAM <i class="fa-brands fa-instagram fa-rotate-90"></i> </a>
+    </marquee>
+
+    <marquee scrollamount="9" class="navbar right" direction="down">
+        <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/"> <i class="fa-brands fa-linkedin fa-rotate-90"></i> LINKEDIN <i class="fa-brands fa-linkedin fa-rotate-90"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://github.com/Kamilplhh"> <i class="fa-brands fa-github fa-rotate-90"></i> GITHUB <i class="fa-brands fa-github fa-rotate-90"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://www.instagram.com/kamil_plhh/"> <i class="fa-brands fa-instagram fa-rotate-90"></i> INSTAGRAM <i class="fa-brands fa-instagram fa-rotate-90"></i> </a>
+    </marquee>
     @show
     <div class="content">
         @yield('content')
