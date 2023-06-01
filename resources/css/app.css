@@ -19,6 +19,9 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+.navbar a:hover {
     color: rgb(27, 31, 233);
 }
 
