@@ -1,34 +1,39 @@
 .projects:hover {
-    background-color: blue;
+    background-color: rgb(75, 162, 168);
     color: white;
     width: 70%;
     height: 50%;
+    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
 }
 
 .contact:hover {
-    background-color: blue;
+    background-color: rgb(159, 190, 108);
     color: white;
     width: 50%;
     height: 70%;
+    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
 }
 
 .about:hover {
-    background-color: blue;
+    background-color: rgb(123, 21, 170);
     color: white;
     width: 50%;
     height: 70%;
+    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
 }
 
 .services:hover {
-    background-color: blue;
+    background-color: rgb(215, 218, 41);
     color: white;
     width: 70%;
     height: 50%;
+    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
 }
 
 .smallH{
     width: 30%;
     height: 70%;
+    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
 }
 
 .bigH{

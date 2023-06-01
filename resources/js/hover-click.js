@@ -1,7 +1,9 @@
 import $ from 'jquery';
 window.$ = $;
 
-//Projects hover
+//
+//
+//Projects
 $(".projects").on("mouseover", function () {
     $(".contact").toggleClass('smallH');
     $(".about").toggleClass('bigH');
@@ -16,7 +18,13 @@ $(".projects").on("mouseout", function () {
     $(".mid").removeClass('smallM');
 });
 
-//Contact hover
+$(".projects").on("click", function () {
+    $(".pCw").addClass('show');
+})
+
+//
+//
+//Contact 
 $(".contact").on("mouseover", function () {
     $(".projects").toggleClass('smallW2');
     $(".about").toggleClass('smallH2');
@@ -31,7 +39,13 @@ $(".contact").on("mouseout", function () {
     $(".mid").removeClass('bigM');
 });
 
-//About hover
+$(".contact").on("click", function () {
+    $(".cCw").toggleClass('show');
+})
+
+//
+//
+//About
 $(".about").on("mouseover", function () {
     $(".projects").toggleClass('bigW');
     $(".contact").toggleClass('smallH2');
@@ -46,7 +60,13 @@ $(".about").on("mouseout", function () {
     $(".mid").removeClass('bigM');
 });
 
-//Services hover
+$(".about").on("click", function () {
+    $(".aCw").toggleClass('show');
+})
+
+//
+//
+//Services 
 $(".services").on("mouseover", function () {
     $(".projects").toggleClass('smallW');
     $(".contact").toggleClass('bigH');
@@ -60,3 +80,7 @@ $(".services").on("mouseout", function () {
     $(".about").removeClass('smallH');
     $(".mid").toggleClass('smallM');
 });
+
+$(".services").on("click", function () {
+    $(".sCw").toggleClass('show');
+})

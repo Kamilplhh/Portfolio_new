@@ -5,6 +5,7 @@
 }
 
 .center {
+    position: static;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,6 +15,31 @@
     transition: 0.3s linear;
     border: solid black 2px;
     cursor: pointer;
+    z-index: 2;
+}
+
+.show{
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.pCw {
+    background-color: rgb(93, 138, 141);
+}
+
+.cCw {
+    background-color: rgb(159, 190, 108);
+}
+
+.aCw {
+    background-color: rgb(123, 21, 170);
+}
+
+.sCw {
+    background-color: rgb(217, 219, 98);
 }
 
 .projects {
@@ -38,7 +64,7 @@
 }
 
 .mid {
-    background-color: rgb(201, 41, 41);
+    background-color: rgb(86, 110, 241);
     width: 20%;
     height: 20%;
     float: left;
@@ -50,4 +76,23 @@
     width: 60%;
     height: 40%;
     float: right;
+}
+
+.block {
+    display: none;
+    transition: 0.3s ease-in;
+    position: fixed;
+    height: 100%;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    cursor: initial;
+    padding: 60px;
+}
+
+#exit {
+    position: absolute;
+    right: 80px;
+    top: 80px;
 }

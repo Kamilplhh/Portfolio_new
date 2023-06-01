@@ -6,7 +6,7 @@ export default defineConfig({
         laravel({
             input: [
                 'resources/js/app.js',
-                'resources/js/hover.js',
+                'resources/js/hover-click.js',
             ],
             refresh: true,
         }),
