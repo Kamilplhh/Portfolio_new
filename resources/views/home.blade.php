@@ -16,9 +16,9 @@
 </div>
 
 <a href="https://github.com/Kamilplhh/Portfolio_new">
-<div class="mid center">
-    SCRIPT
-</div>
+    <div class="mid center">
+        <span id="typed"></span>
+    </div>
 </a>
 
 <div class="services center">

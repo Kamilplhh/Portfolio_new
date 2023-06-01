@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/js/app.js')
+    @vite('resources/js/hover.js')
 </head>
 
 <body>

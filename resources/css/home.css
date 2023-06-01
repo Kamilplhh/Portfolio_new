@@ -11,7 +11,7 @@
     align-content: center;
     font-family: 'Cherry Bomb One', cursive;
     font-size: 42px;
-    transition: 0.1s linear;
+    transition: 0.3s linear;
     border: solid black 2px;
     cursor: pointer;
 }
@@ -38,7 +38,7 @@
 }
 
 .mid {
-    background-color: blue;
+    background-color: rgb(201, 41, 41);
     width: 20%;
     height: 20%;
     float: left;

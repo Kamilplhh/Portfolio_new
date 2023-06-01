@@ -26,40 +26,32 @@
     height: 50%;
 }
 
-.smallH {
+.smallH{
     width: 30%;
     height: 70%;
 }
 
-.bigH {
-    width: 45%;
+.bigH{
+    width: 50%;
     height: 50%;
 }
 
-.smallW {
-    width: 55%;
+.smallW{
+    width: 50%;
     height: 30%;
 }
 
-.smallM {
-    width: 25%;
-}
-
-.smallW2 {
+.smallW2{
     width: 50%;
-    height: 45%;
+    height: 50%;
 }
 
-.smallH2 {
+.smallH2{
     width: 30%;
-    height: 55%;
+    height: 50%;
 }
 
-.bigW {
+.bigW{
     width: 70%;
     height: 30%;
-}
-
-.bigM {
-    height: 25%;
 }
