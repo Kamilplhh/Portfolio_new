@@ -1,9 +1,10 @@
 import $ from 'jquery';
 window.$ = $;
 
-//
+
 //
 //Projects
+//
 $(".projects").on("mouseover", function () {
     $(".contact").toggleClass('smallH');
     $(".about").toggleClass('bigH');
@@ -19,12 +20,12 @@ $(".projects").on("mouseout", function () {
 });
 
 $(".projects").on("click", function () {
-    $(".pCw").addClass('show');
+    $(".pCw").attr("style", "display:block !important");
 })
 
 //
-//
 //Contact 
+//
 $(".contact").on("mouseover", function () {
     $(".projects").toggleClass('smallW2');
     $(".about").toggleClass('smallH2');
@@ -40,17 +41,17 @@ $(".contact").on("mouseout", function () {
 });
 
 $(".contact").on("click", function () {
-    $(".cCw").toggleClass('show');
+    $(".cCw").attr("style", "display:block !important");
 })
 
 //
-//
 //About
+//
 $(".about").on("mouseover", function () {
     $(".projects").toggleClass('bigW');
     $(".contact").toggleClass('smallH2');
     $(".services").toggleClass('smallW2');
-    $(".mid").toggleClass('bigM');
+    $(".mid").addClass('bigM');
 });
 
 $(".about").on("mouseout", function () {
@@ -61,12 +62,13 @@ $(".about").on("mouseout", function () {
 });
 
 $(".about").on("click", function () {
-    $(".aCw").toggleClass('show');
+    $(".aCw").attr("style", "display:block !important");
 })
 
-//
+
 //
 //Services 
+//
 $(".services").on("mouseover", function () {
     $(".projects").toggleClass('smallW');
     $(".contact").toggleClass('bigH');
@@ -82,5 +84,12 @@ $(".services").on("mouseout", function () {
 });
 
 $(".services").on("click", function () {
-    $(".sCw").toggleClass('show');
+    $(".sCw").attr("style", "display:block !important");
 })
+
+//
+//Exit
+//
+$(".exit").click(function () {
+    $(".exit").closest("div").attr("style", "display:none !important");
+});

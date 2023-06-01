@@ -3,7 +3,7 @@
     color: white;
     width: 70%;
     height: 50%;
-    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
+    text-shadow: 1px 1px 3px black;
 }
 
 .contact:hover {
@@ -11,7 +11,7 @@
     color: white;
     width: 50%;
     height: 70%;
-    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
+    text-shadow: 1px 1px 3px black;
 }
 
 .about:hover {
@@ -19,7 +19,7 @@
     color: white;
     width: 50%;
     height: 70%;
-    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
+    text-shadow: 1px 1px 3px black;
 }
 
 .services:hover {
@@ -27,13 +27,13 @@
     color: white;
     width: 70%;
     height: 50%;
-    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
+    text-shadow: 1px 1px 3px black;
 }
 
 .smallH{
     width: 30%;
     height: 70%;
-    text-shadow: 1px 1px 3px rgba(66, 68, 90, 1);
+    text-shadow: 1px 1px 3px black;
 }
 
 .bigH{
