@@ -21,14 +21,6 @@
         <a href="https://www.instagram.com/kamil_plhh/" target="_blank"> <i class="fa-brands fa-instagram"></i> INSTAGRAM <i class="fa-brands fa-instagram"></i> </a>
     </marquee>
 
-    <marquee scrollamount="10" class="navbar bottom" direction="right">
-        <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/" target="_blank"> <i class="fa-brands fa-linkedin"></i> LINKEDIN <i class="fa-brands fa-linkedin"></i> </a>
-        <i class="fa-solid fa-circle fa-2xs"></i>
-        <a href="https://github.com/Kamilplhh" target="_blank"> <i class="fa-brands fa-github"></i> GITHUB <i class="fa-brands fa-github"></i> </a>
-        <i class="fa-solid fa-circle fa-2xs"></i>
-        <a href="https://www.instagram.com/kamil_plhh/" target="_blank"> <i class="fa-brands fa-instagram"></i> INSTAGRAM <i class="fa-brands fa-instagram"></i> </a>
-    </marquee>
-
     <marquee scrollamount="12" class="navbar left" direction="down">
         <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/" target="_blank"> <i class="fa-brands fa-linkedin fa-rotate-90"></i> LINKEDIN <i class="fa-brands fa-linkedin fa-rotate-90"></i> </a>
         <i class="fa-solid fa-circle fa-2xs"></i>
@@ -44,6 +36,24 @@
         <i class="fa-solid fa-circle fa-2xs"></i>
         <a href="https://www.instagram.com/kamil_plhh/" target="_blank"> <i class="fa-brands fa-instagram fa-rotate-90"></i> INSTAGRAM <i class="fa-brands fa-instagram fa-rotate-90"></i> </a>
     </marquee>
+
+    <marquee scrollamount="10" class="navbar bottom" direction="right">
+        <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/" target="_blank"> <i class="fa-brands fa-linkedin"></i> LINKEDIN <i class="fa-brands fa-linkedin"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://github.com/Kamilplhh" target="_blank"> <i class="fa-brands fa-github"></i> GITHUB <i class="fa-brands fa-github"></i> </a>
+        <i class="fa-solid fa-circle fa-2xs"></i>
+        <a href="https://www.instagram.com/kamil_plhh/" target="_blank"> <i class="fa-brands fa-instagram"></i> INSTAGRAM <i class="fa-brands fa-instagram"></i> </a>
+    </marquee>
+
+    <div class="navbar Homebuttons">
+        <div class="row home">
+            <div class="col-2 navButton" id="navProject">PROJECTS</div>
+            <div class="col-2 navButton" id="navAbout">ABOUT</div>
+            <div class="col-4 navButton" id="navHome">HOME</div>
+            <div class="col-2 navButton" id="navContact">CONTACT</div>
+            <div class="col-2 navButton" id="navServices">SERVICES</div>
+        </div>
+    </div>
     @show
     <div class="content">
         @yield('content')

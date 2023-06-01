@@ -1,6 +1,10 @@
 import '../css/app.css';
 import '../css/home.css';
 import '../css/scaling.css';
+import '../css/project.css';
+import '../css/about.css';
+import '../css/contact.css';
+import '../css/services.css';
 import '../css/homeHover.css';
 import "@fortawesome/fontawesome-free/css/all.css";
 import $ from 'jquery';

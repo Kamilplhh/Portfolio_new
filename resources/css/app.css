@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 
 .navbar {
@@ -11,6 +11,7 @@ body {
     font-weight: bold;
     color: black;
     letter-spacing: .5rem;
+    padding: 0 !important;
 }
 
 a {
@@ -36,6 +37,7 @@ a:hover {
     width: 100%;
     height: 60px;
     bottom: 0;
+    animation: navbutton 0.3s ease 0s 1 normal forwards;
 }
 
 .left {
@@ -54,4 +56,54 @@ a:hover {
     width: 60px;
     z-index: 6;
     writing-mode: vertical-rl;
+}
+
+.Homebuttons {
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    display: none;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 0 !important;
+    animation: navbutton 0.3s ease 0s 1 normal forwards;
+}
+
+.navButton {
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+.navButton:hover {
+    background-color: rgb(60, 190, 60);
+}
+
+#navHome {
+    background-color: rgb(86, 110, 241);
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#navHome:hover {
+    background-color: rgb(59, 79, 190);
+}
+
+@keyframes navbutton {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

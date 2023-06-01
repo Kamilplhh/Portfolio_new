@@ -29,6 +29,19 @@
 
 <div class="block pCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
+
+    <div class="row projectRow">
+        <div class="col-6 col-sm-4 projectGrid">
+            <div class="Pshowcase"></div>
+        </div>
+        <div class="col-6 col-sm-4 projectGrid">
+            <div class="Pshowcase"></div>
+        </div>
+        <div class="col-6 col-sm-4 projectGrid">
+            <div class="Pshowcase"></div>
+        </div>
+    </div>
+    <div id="next"> <i class="next">Next &raquo</i></div>
 </div>
 
 <div class="block sCw">

@@ -21,6 +21,8 @@ $(".projects").on("mouseout", function () {
 
 $(".projects").on("click", function () {
     $(".pCw").attr("style", "display:block !important");
+    $(".bottom").attr("style", "display:none !important");
+    $(".Homebuttons").attr("style", "display:block !important");
 })
 
 //
@@ -42,6 +44,8 @@ $(".contact").on("mouseout", function () {
 
 $(".contact").on("click", function () {
     $(".cCw").attr("style", "display:block !important");
+    $(".bottom").attr("style", "display:none !important");
+    $(".Homebuttons").attr("style", "display:block !important");
 })
 
 //
@@ -63,6 +67,8 @@ $(".about").on("mouseout", function () {
 
 $(".about").on("click", function () {
     $(".aCw").attr("style", "display:block !important");
+    $(".bottom").attr("style", "display:none !important");
+    $(".Homebuttons").attr("style", "display:block !important");
 })
 
 
@@ -85,6 +91,8 @@ $(".services").on("mouseout", function () {
 
 $(".services").on("click", function () {
     $(".sCw").attr("style", "display:block !important");
+    $(".bottom").attr("style", "display:none !important");
+    $(".Homebuttons").attr("style", "display:block !important");
 })
 
 //
@@ -92,4 +100,6 @@ $(".services").on("click", function () {
 //
 $(".exit").click(function () {
     $(".exit").closest("div").attr("style", "display:none !important");
+    $(".bottom").attr("style", "display:block !important");
+    $(".Homebuttons").attr("style", "display:none !important");
 });
