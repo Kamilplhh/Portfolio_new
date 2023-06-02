@@ -12,36 +12,51 @@ function toggleAnimation(x,y) {
     }, 700);
 }
 
-function displayNone() {
+function display(x){
+    $(x).attr("style", "display:block !important");
+    $(".bottom").attr("style", "display:none !important");
+    $(".Homebuttons").attr("style", "display:block !important");
+}
+
+function displayNone(x) {
     $(".exit").closest("div").attr("style", "display:none !important");
+
+    if(typeof x !== 'undefined'){
+        $(".bottom").attr("style", "display:block !important");
+        $(".Homebuttons").attr("style", "display:none !important");
+       }
 }
 
-function Set1(x,y,z) {
-    $(x).toggleClass('smallH');
-    $(y).toggleClass('bigH');
-    $(z).toggleClass('smallW');
-    $(".mid").toggleClass('smallM');
-}
+//
+//Home
+//
 
-function Set2(x,y,z) {
-    $(x).toggleClass('smallW2');
-    $(y).toggleClass('smallH2');
-    $(z).toggleClass('bigW');
-    $(".mid").toggleClass('bigM');
-}
+$("#navHome").on("click", function () {
+    $(".exit").closest("div").attr("style", "display:none !important");
+    $(".bottom").attr("style", "display:block !important");
+    $(".Homebuttons").attr("style", "display:none !important");
+})
 
 //
 //Projects
 //
-$(".projects").on("mouseover", Set1(".contact",".about",".services"));
+$(".projects").on("mouseover", function () {
+    $(".contact").toggleClass('smallH');
+    $(".about").toggleClass('bigH');
+    $(".services").toggleClass('smallW');
+    $(".mid").toggleClass('smallM');
+});
 
-$(".projects").on("mouseout", Set1(".contact",".about",".services"));
+$(".projects").on("mouseout", function () {
+    $(".contact").removeClass('smallH');
+    $(".about").removeClass('bigH');
+    $(".services").removeClass('smallW');
+    $(".mid").removeClass('smallM');
+});
 
 $(".projects").on("click", function () {
+    display(".pCw");
     toggleAnimation(".pCw",'TopL');
-    $(".pCw").attr("style", "display:block !important");
-    $(".bottom").attr("style", "display:none !important");
-    $(".Homebuttons").attr("style", "display:block !important");
 })
 
 $("#navProject").on("click", function () {
@@ -70,17 +85,14 @@ $(".contact").on("mouseout", function () {
 
 $(".contact").on("click", function () {
     toggleAnimation(".cCw",'TopR');
-    $(".cCw").attr("style", "display:block !important");
-    $(".bottom").attr("style", "display:none !important");
-    $(".Homebuttons").attr("style", "display:block !important");
+    display(".cCw");
 })
 
 $("#navContact").on("click", function () {
     displayNone();
     $(".cCw").attr("style", "display:block !important"); 
-    $(".cCw").addClass('animation');
 
-    toggleAnimation(".cCw");
+    toggleAnimation(".cCw",'');
 })
 
 //
@@ -102,17 +114,14 @@ $(".about").on("mouseout", function () {
 
 $(".about").on("click", function () {
     toggleAnimation(".aCw",'BotL');
-    $(".aCw").attr("style", "display:block !important");
-    $(".bottom").attr("style", "display:none !important");
-    $(".Homebuttons").attr("style", "display:block !important");
+    display(".aCw");
 })
 
 $("#navAbout").on("click", function () {
     displayNone();
     $(".aCw").attr("style", "display:block !important"); 
-    $(".aCw").addClass('animation');
 
-    toggleAnimation(".aCw");
+    toggleAnimation(".aCw",'');
 })
 
 //
@@ -134,24 +143,19 @@ $(".services").on("mouseout", function () {
 
 $(".services").on("click", function () {
     toggleAnimation(".sCw",'BotR');
-    $(".sCw").attr("style", "display:block !important");
-    $(".bottom").attr("style", "display:none !important");
-    $(".Homebuttons").attr("style", "display:block !important");
+    display(".sCw");
 })
 
 $("#navServices").on("click", function () {
     displayNone();
     $(".sCw").attr("style", "display:block !important"); 
-    $(".sCw").addClass('animation');
 
-    toggleAnimation(".sCw");
+    toggleAnimation(".sCw",'');
 })
 
 //
 //Exit
 //
 $(".exit").click(function () {
-    $(".exit").closest("div").attr("style", "display:none !important");
-    $(".bottom").attr("style", "display:block !important");
-    $(".Homebuttons").attr("style", "display:none !important");
+    displayNone(true)
 });
