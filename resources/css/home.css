@@ -18,24 +18,40 @@
     z-index: 2;
 }
 
-.pCw {
-    background-color: rgb(75, 162, 168);
+.animation {
+    animation: Top .5s ease-in 0s 1 normal !important;
+}
+
+.animationTopL {
     animation: topLeft .4s ease-in 0s 1 normal;
+}
+
+.animationTopR {
+    animation: topRight .4s ease-in 0s 1 normal;
+}
+
+.animationBotL {
+    animation: bottomLeft .4s ease-in 0s 1 normal;
+}
+
+.animationBotR {
+    animation: bottomRright .4s ease-in 0s 1 normal;
+}
+
+.pCw {
+    background-color: rgb(75, 162, 168); 
 }
 
 .cCw {
     background-color: rgb(159, 190, 108);
-    animation: topRight .4s ease-in 0s 1 normal;
 }
 
 .aCw {
-    background-color: rgb(123, 21, 170);
-    animation: bottomLeft .4s ease-in 0s 1 normal;
+    background-color: rgb(123, 21, 170); 
 }
 
 .sCw {
     background-color: rgb(215, 218, 41);
-    animation: bottomRright .4s ease-in 0s 1 normal;
 }
 
 .projects {
@@ -132,6 +148,18 @@
 	100% {
 		transform: scale(1);
 		transform-origin: bottom right;
+	}
+}
+
+@keyframes Top {
+	0% {
+		opacity: 1;
+		transform: translateY(-750px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
 

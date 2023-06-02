@@ -1,28 +1,54 @@
 import $ from 'jquery';
 window.$ = $;
 
+function Animation(x, y) {
+    $(x).toggleClass('animation'+ y);
+}
+
+function toggleAnimation(x,y) {
+    Animation(x,y);
+    setTimeout(function () {
+        Animation(x,y);
+    }, 700);
+}
+
+function displayNone() {
+    $(".exit").closest("div").attr("style", "display:none !important");
+}
+
+function Set1(x,y,z) {
+    $(x).toggleClass('smallH');
+    $(y).toggleClass('bigH');
+    $(z).toggleClass('smallW');
+    $(".mid").toggleClass('smallM');
+}
+
+function Set2(x,y,z) {
+    $(x).toggleClass('smallW2');
+    $(y).toggleClass('smallH2');
+    $(z).toggleClass('bigW');
+    $(".mid").toggleClass('bigM');
+}
 
 //
 //Projects
 //
-$(".projects").on("mouseover", function () {
-    $(".contact").toggleClass('smallH');
-    $(".about").toggleClass('bigH');
-    $(".services").toggleClass('smallW');
-    $(".mid").toggleClass('smallM');
-});
+$(".projects").on("mouseover", Set1(".contact",".about",".services"));
 
-$(".projects").on("mouseout", function () {
-    $(".contact").removeClass('smallH');
-    $(".about").removeClass('bigH');
-    $(".services").removeClass('smallW');
-    $(".mid").removeClass('smallM');
-});
+$(".projects").on("mouseout", Set1(".contact",".about",".services"));
 
 $(".projects").on("click", function () {
+    toggleAnimation(".pCw",'TopL');
     $(".pCw").attr("style", "display:block !important");
     $(".bottom").attr("style", "display:none !important");
     $(".Homebuttons").attr("style", "display:block !important");
+})
+
+$("#navProject").on("click", function () {
+    displayNone();
+    $(".pCw").attr("style", "display:block !important"); 
+
+    toggleAnimation(".pCw",'');
 })
 
 //
@@ -43,9 +69,18 @@ $(".contact").on("mouseout", function () {
 });
 
 $(".contact").on("click", function () {
+    toggleAnimation(".cCw",'TopR');
     $(".cCw").attr("style", "display:block !important");
     $(".bottom").attr("style", "display:none !important");
     $(".Homebuttons").attr("style", "display:block !important");
+})
+
+$("#navContact").on("click", function () {
+    displayNone();
+    $(".cCw").attr("style", "display:block !important"); 
+    $(".cCw").addClass('animation');
+
+    toggleAnimation(".cCw");
 })
 
 //
@@ -55,7 +90,7 @@ $(".about").on("mouseover", function () {
     $(".projects").toggleClass('bigW');
     $(".contact").toggleClass('smallH2');
     $(".services").toggleClass('smallW2');
-    $(".mid").addClass('bigM');
+    $(".mid").toggleClass('bigM');
 });
 
 $(".about").on("mouseout", function () {
@@ -66,11 +101,19 @@ $(".about").on("mouseout", function () {
 });
 
 $(".about").on("click", function () {
+    toggleAnimation(".aCw",'BotL');
     $(".aCw").attr("style", "display:block !important");
     $(".bottom").attr("style", "display:none !important");
     $(".Homebuttons").attr("style", "display:block !important");
 })
 
+$("#navAbout").on("click", function () {
+    displayNone();
+    $(".aCw").attr("style", "display:block !important"); 
+    $(".aCw").addClass('animation');
+
+    toggleAnimation(".aCw");
+})
 
 //
 //Services 
@@ -86,13 +129,22 @@ $(".services").on("mouseout", function () {
     $(".projects").removeClass('smallW');
     $(".contact").removeClass('bigH');
     $(".about").removeClass('smallH');
-    $(".mid").toggleClass('smallM');
+    $(".mid").removeClass('smallM');
 });
 
 $(".services").on("click", function () {
+    toggleAnimation(".sCw",'BotR');
     $(".sCw").attr("style", "display:block !important");
     $(".bottom").attr("style", "display:none !important");
     $(".Homebuttons").attr("style", "display:block !important");
+})
+
+$("#navServices").on("click", function () {
+    displayNone();
+    $(".sCw").attr("style", "display:block !important"); 
+    $(".sCw").addClass('animation');
+
+    toggleAnimation(".sCw");
 })
 
 //

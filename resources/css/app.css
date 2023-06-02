@@ -80,7 +80,10 @@ a:hover {
 }
 
 .navButton {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     border-left: 1px solid black;
     border-right: 1px solid black;
     cursor: pointer;
