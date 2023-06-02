@@ -26,15 +26,27 @@ function displayNone(x) {
         $(".Homebuttons").attr("style", "display:none !important");
        }
 }
+//fix
+// function set1(x,y,z) {
+//     $("."+x).toggleClass('smallH');
+//     $("."+y).toggleClass('bigH');
+//     $("."+z).toggleClass('smallW');
+//     $(".mid").toggleClass('smallM');
+// }
+
+// function set2(x,y,z) {
+//     $("."+x).toggleClass('smallW2');
+//     $("."+y).toggleClass('smallH2');
+//     $("."+z).toggleClass('bigW');
+//     $(".mid").toggleClass('bigM');
+// }
 
 //
 //Home
 //
 
 $("#navHome").on("click", function () {
-    $(".exit").closest("div").attr("style", "display:none !important");
-    $(".bottom").attr("style", "display:block !important");
-    $(".Homebuttons").attr("style", "display:none !important");
+    displayNone(true);
 })
 
 //
@@ -55,15 +67,14 @@ $(".projects").on("mouseout", function () {
 });
 
 $(".projects").on("click", function () {
-    display(".pCw");
     toggleAnimation(".pCw",'TopL');
+    display(".pCw");
 })
 
 $("#navProject").on("click", function () {
     displayNone();
-    $(".pCw").attr("style", "display:block !important"); 
-
     toggleAnimation(".pCw",'');
+    $(".pCw").attr("style", "display:block !important");    
 })
 
 //
@@ -90,9 +101,8 @@ $(".contact").on("click", function () {
 
 $("#navContact").on("click", function () {
     displayNone();
-    $(".cCw").attr("style", "display:block !important"); 
-
     toggleAnimation(".cCw",'');
+    $(".cCw").attr("style", "display:block !important"); 
 })
 
 //
@@ -119,9 +129,8 @@ $(".about").on("click", function () {
 
 $("#navAbout").on("click", function () {
     displayNone();
-    $(".aCw").attr("style", "display:block !important"); 
-
     toggleAnimation(".aCw",'');
+    $(".aCw").attr("style", "display:block !important");  
 })
 
 //
@@ -148,9 +157,8 @@ $(".services").on("click", function () {
 
 $("#navServices").on("click", function () {
     displayNone();
-    $(".sCw").attr("style", "display:block !important"); 
-
     toggleAnimation(".sCw",'');
+    $(".sCw").attr("style", "display:block !important");  
 })
 
 //
