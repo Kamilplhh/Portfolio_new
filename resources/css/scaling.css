@@ -2,9 +2,30 @@
     .center {
         font-size: 16px;
     }
+
     .home {
         font-size: 22px;
-        letter-spacing: .2rem;
+        letter-spacing: .2rem !important;
+    }
+
+    .cCw h1 {
+        font-size: 22px;
+    }
+
+    .text-area {
+        width: 200px !important;
+        min-height: 75px !important;
+        max-height: 200px !important;
+        font-size: 12px;
+    }
+
+    .form-button {
+        margin-left: 0 !important;
+    }
+
+    .cCwMail input {
+        width: 200px !important;
+        font-size: 12px;
     }
 }
 
@@ -12,7 +33,66 @@
     .center {
         font-size: 16px;
     }
+
     .home {
         font-size: 12px;
+    }
+
+    .cCwMail {
+        margin-top: -15% !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .text-area {
+        width: 250px !important;
+        min-height: 125px !important;
+        max-height: 250px !important;
+        font-size: 12px;
+    }
+
+    .form-button {
+        margin-left: 0 !important;
+    }
+
+    .cCwMail input {
+        width: 250px !important;
+        font-size: 12px;
+    }
+
+    .cCwContact,
+    .exit {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar {
+        font-size: 12px !important;
+        letter-spacing: .1rem !important;
+    }
+
+    .home {
+        font-size: 10px !important;
+        letter-spacing: .1rem !important;
+    }
+
+    .top,
+    .bottom,
+    .Homebuttons {
+        height: 30px !important;
+    }
+
+    .left,
+    .right {
+        width: 30px !important;
+    }
+
+    .content {
+        padding: 30px !important;
+    }
+
+    .mid {
+        font-size: 8px !important;
     }
 }

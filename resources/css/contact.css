@@ -104,9 +104,8 @@
     width: 400px;
 }
 
-
 .text-area {
-    min-width: 400px;
+    width: 400px;
     min-height: 100px;
     max-height: 300px;
     transition: none;

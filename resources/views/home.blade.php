@@ -13,7 +13,6 @@
 
 <div class="about center">
     ABOUT
-
 </div>
 
 <a href="https://github.com/Kamilplhh/Portfolio_new" target="_blank">
