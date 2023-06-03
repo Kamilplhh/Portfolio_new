@@ -50,8 +50,9 @@
 
 <div class="block cCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
-    <div class="contactBody">
-        <div class="mail">
+    <div class="cCwContent">
+        <center><h1>CONTACT</h1></center>
+        <div class="cCwMail">
             @if (session('status'))
             <div class="alert alert-success">
                 {{ session('status') }}
@@ -60,20 +61,17 @@
             <form action="{{ route('send.email') }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label>Name</label>
-                    <input type="text" style="width: 13vw;" name="name" id="name" required>
-
-                    <label>Email</label>
-                    <input type="email" style="width: 13vw;" name="email" id="email" required><br>
-
-                    <label>Subject</label>
-                    <input type="text" class="form-control" name="subject" id="subject" required>
-
-                    <label>Message</label>
-                    <textarea class="form-control" name="message" id="message" rows="4" required></textarea>
+                    <input type="text" name="name" id="name" placeholder="NAME" required><br>
+                    <input type="email" name="email" id="email" placeholder="EMAIL" required><br>
+                    <input type="text" name="subject" id="subject" placeholder="SUBJECT" required>
+                    <textarea class="form-control" name="message" id="message" placeholder="MESSAGE" required></textarea>
                 </div>
-                <input type="submit" value="Send Message" class="btn btn-dark btn-block">
+                <input type="submit" value="Send Message">
             </form>
+        </div>
+
+        <div class="cCwContact">
+
         </div>
     </div>
 </div>

@@ -1,4 +1,31 @@
-.contactBody {
+.cCwContent {
     height: 100%;
     width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.cCwMail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.cCwContact {
+
+}
+
+.cCwMail input {
+    width: 300px;
+    margin: 4px 0px;
+}
+
+.form-control {
+    min-width: 300px;
+    min-height: 100px;
+    max-height: 300px;
 }
