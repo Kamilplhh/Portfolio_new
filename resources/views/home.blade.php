@@ -49,26 +49,26 @@
 </div>
 
 <div class="block cCw">
+    @if (session('status'))
+    <div class="alert alert-success">
+        {{ session('status') }}
+    </div>
+    @endif
     <i class="fa-regular fa-x fa-xl exit"></i>
     <div class="cCwContent">
         <center>
             <h1>CONTACT</h1>
         </center>
         <div class="cCwMail">
-            @if (session('status'))
-            <div class="alert alert-success">
-                {{ session('status') }}
-            </div>
-            @endif
             <form action="{{ route('send.email') }}" method="POST">
                 @csrf
                 <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder="NAME" required><br>
-                    <input type="email" name="email" id="email" placeholder="EMAIL" required><br>
-                    <input type="text" name="subject" id="subject" placeholder="SUBJECT" required>
-                    <textarea class="form-control" name="message" id="message" placeholder="MESSAGE" required></textarea>
+                    <input type="text" class="form-input" name="name" id="name" placeholder="NAME" required><br>
+                    <input type="email" class="form-input" name="email" id="email" placeholder="EMAIL" required><br>
+                    <input type="text" class="form-input" name="subject" id="subject" placeholder="SUBJECT" required><br>
+                    <textarea class="text-area form-input" name="message" id="message" placeholder="MESSAGE" required></textarea>
                 </div>
-                <input type="submit" value="Send Message">
+                <input class="form-button" type="submit" value="SEND">
             </form>
         </div>
 

@@ -16,8 +16,42 @@
     float: left;
 }
 
+.form-input {
+    border-radius: 10px;
+    border: 0;
+    padding: 5px 0 5px 15px;
+    transition: 0.5s ease-out;
+    margin: 5px 0px;
+    color: rgb(153, 150, 150);
+    background-color: rgb(37, 38, 46);
+}
+
+.form-input:focus {
+    background-color: white;
+    outline: none;
+    box-shadow: 0px 0px 17px 4px rgba(66, 68, 90, 1);
+}
+
+.form-button {
+    transition: 0.2s linear;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(37, 38, 46);
+    color: white;
+    margin-left: 100px;
+    width: 200px !important;
+}
+
+.form-button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+    outline-offset: 5px;
+    outline: 3px solid rgb(37, 38, 46);
+}
+
 .cCwContact {
-    margin-top: -5%;
+    margin-top: -6.5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,9 +73,9 @@
 
 .contact-icon {
     margin: 10px 0;
-    border: 1px solid black;
+    border: 1px solid rgb(37, 38, 46);
     padding: 25px 12px;
-    background-color: black;
+    background-color: rgb(37, 38, 46);
     border-radius: 50%;
     transition: 0.2s ease-in;
     color: white;
@@ -52,8 +86,7 @@
     background-color: white;
     color: black;
     outline-offset: 5px;
-    outline: 3px solid black;
-
+    outline: 3px solid rgb(37, 38, 46);
 }
 
 .hitMe {
@@ -69,12 +102,12 @@
 
 .cCwMail input {
     width: 400px;
-    margin: 5px 0px;
 }
 
 
-.form-control {
+.text-area {
     min-width: 400px;
     min-height: 100px;
     max-height: 300px;
+    transition: none;
 }
