@@ -74,7 +74,9 @@
 
         <div class="cCwContact">
             <div class="Icontact">
-
+                <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/" class="contact-icon" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                <a href="https://github.com/Kamilplhh" class="contact-icon" target="_blank"> <i class="fa-brands fa-github fa-2xl"></i></a>
+                <a href="https://www.instagram.com/kamil_plhh/" class="contact-icon" target="_blank"> <i class="fa-brands fa-instagram fa-2xl"></i></a>
             </div>
             <h1 class="hitMe">Hit me up</h1>
         </div>
