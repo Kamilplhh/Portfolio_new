@@ -1,31 +1,58 @@
 .cCwContent {
     height: 100%;
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 10%;
 }
 
 .cCwMail {
+    margin-top: -5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: center;
     height: 100%;
     width: 50%;
+    float: left;
 }
 
 .cCwContact {
+    margin-top: -10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
 
+.Icontact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 5%;
+}
+
+.hitMe {
+    padding-top: 12%;
+}
+
+.cCw h1 {
+    font-family: 'Source Serif Pro', serif;
 }
 
 .cCwMail input {
-    width: 300px;
-    margin: 4px 0px;
+    width: 400px;
+    margin: 5px 0px;
 }
 
+
 .form-control {
-    min-width: 300px;
+    min-width: 400px;
     min-height: 100px;
     max-height: 300px;
 }

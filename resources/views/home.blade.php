@@ -51,7 +51,9 @@
 <div class="block cCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
     <div class="cCwContent">
-        <center><h1>CONTACT</h1></center>
+        <center>
+            <h1>CONTACT</h1>
+        </center>
         <div class="cCwMail">
             @if (session('status'))
             <div class="alert alert-success">
@@ -71,7 +73,10 @@
         </div>
 
         <div class="cCwContact">
+            <div class="Icontact">
 
+            </div>
+            <h1 class="hitMe">Hit me up</h1>
         </div>
     </div>
 </div>
