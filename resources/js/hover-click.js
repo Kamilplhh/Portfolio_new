@@ -2,17 +2,17 @@ import $ from 'jquery';
 window.$ = $;
 
 function Animation(x, y) {
-    $(x).toggleClass('animation'+ y);
+    $(x).toggleClass('animation' + y);
 }
 
-function toggleAnimation(x,y) {
-    Animation(x,y);
+function toggleAnimation(x, y) {
+    Animation(x, y);
     setTimeout(function () {
-        Animation(x,y);
+        Animation(x, y);
     }, 700);
 }
 
-function display(x){
+function display(x) {
     $(x).attr("style", "display:block !important");
     $(".bottom").attr("style", "display:none !important");
     $(".Homebuttons").attr("style", "display:block !important");
@@ -21,10 +21,10 @@ function display(x){
 function displayNone(x) {
     $(".exit").closest("div").attr("style", "display:none !important");
 
-    if(typeof x !== 'undefined'){
+    if (typeof x !== 'undefined') {
         $(".bottom").attr("style", "display:block !important");
         $(".Homebuttons").attr("style", "display:none !important");
-       }
+    }
 }
 //fix
 // function set1(x,y,z) {
@@ -44,7 +44,6 @@ function displayNone(x) {
 //
 //Home
 //
-
 $("#navHome").on("click", function () {
     displayNone(true);
 })
@@ -67,14 +66,14 @@ $(".projects").on("mouseout", function () {
 });
 
 $(".projects").on("click", function () {
-    toggleAnimation(".pCw",'TopL');
+    toggleAnimation(".pCw", 'TopL');
     display(".pCw");
 })
 
 $("#navProject").on("click", function () {
     displayNone();
-    toggleAnimation(".pCw",'');
-    $(".pCw").attr("style", "display:block !important");    
+    toggleAnimation(".pCw", '');
+    $(".pCw").attr("style", "display:block !important");
 })
 
 //
@@ -95,14 +94,14 @@ $(".contact").on("mouseout", function () {
 });
 
 $(".contact").on("click", function () {
-    toggleAnimation(".cCw",'TopR');
+    toggleAnimation(".cCw", 'TopR');
     display(".cCw");
 })
 
 $("#navContact").on("click", function () {
     displayNone();
-    toggleAnimation(".cCw",'');
-    $(".cCw").attr("style", "display:block !important"); 
+    toggleAnimation(".cCw", '');
+    $(".cCw").attr("style", "display:block !important");
 })
 
 //
@@ -123,14 +122,14 @@ $(".about").on("mouseout", function () {
 });
 
 $(".about").on("click", function () {
-    toggleAnimation(".aCw",'BotL');
+    toggleAnimation(".aCw", 'BotL');
     display(".aCw");
 })
 
 $("#navAbout").on("click", function () {
     displayNone();
-    toggleAnimation(".aCw",'');
-    $(".aCw").attr("style", "display:block !important");  
+    toggleAnimation(".aCw", '');
+    $(".aCw").attr("style", "display:block !important");
 })
 
 //
@@ -151,14 +150,14 @@ $(".services").on("mouseout", function () {
 });
 
 $(".services").on("click", function () {
-    toggleAnimation(".sCw",'BotR');
+    toggleAnimation(".sCw", 'BotR');
     display(".sCw");
 })
 
 $("#navServices").on("click", function () {
     displayNone();
-    toggleAnimation(".sCw",'');
-    $(".sCw").attr("style", "display:block !important");  
+    toggleAnimation(".sCw", '');
+    $(".sCw").attr("style", "display:block !important");
 })
 
 //
