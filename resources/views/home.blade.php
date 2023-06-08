@@ -54,6 +54,7 @@
     </div>
     @endif
     <i class="fa-regular fa-x fa-xl exit"></i>
+
     <div class="cCwContent">
         <center>
             <h1>CONTACT</h1>
@@ -84,5 +85,15 @@
 
 <div class="block aCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
+
+    <div class="aCwContent">
+        <div class="profile Pic">
+
+        </div>
+
+        <div class="profile Info">
+
+        </div>
+    </div>
 </div>
 @stop
