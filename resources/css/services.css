@@ -1,0 +1,10 @@
+.sCwcontent {
+    overflow-y: scroll;
+    height: 200%;
+    width: 100%;
+    display: flex;
+}
+
+.sCwcontent::-webkit-scrollbar {
+    width: 0 !important
+    }

@@ -49,6 +49,9 @@
 <div class="block sCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
 
+    <div class="sCwContent">
+        
+    </div>
 </div>
 
 {{-- Contact section --}}
