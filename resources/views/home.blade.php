@@ -23,8 +23,9 @@
 
 <div class="services center">
     SERVICES
-
 </div>
+
+{{-- Projects section --}}
 
 <div class="block pCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
@@ -43,9 +44,14 @@
     <div id="next"> <i class="next">Next &raquo</i></div>
 </div>
 
+{{-- Services section --}}
+
 <div class="block sCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
+
 </div>
+
+{{-- Contact section --}}
 
 <div class="block cCw">
     @if (session('status'))
@@ -54,6 +60,8 @@
     </div>
     @endif
     <i class="fa-regular fa-x fa-xl exit"></i>
+
+{{-- Mail form --}}
 
     <div class="cCwContent">
         <center>
@@ -72,6 +80,8 @@
             </form>
         </div>
 
+{{-- Contact links section --}}
+
         <div class="cCwContact">
             <div class="Icontact">
                 <a href="https://www.linkedin.com/in/kamil-czekotas-746684277/" class="contact-icon" target="_blank"> <i class="fa-brands fa-linkedin fa-2xl"></i></a>
@@ -83,10 +93,13 @@
     </div>
 </div>
 
+{{-- About section --}}
+
 <div class="block aCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
 
     <div class="aCwContent">
+
         <div class="profile Pic">
 
         </div>
