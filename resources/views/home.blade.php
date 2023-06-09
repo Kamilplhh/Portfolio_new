@@ -102,7 +102,12 @@
     <i class="fa-regular fa-x fa-xl exit"></i>
 
     <div class="aCwContent">
-
+        <div class="aCwNavi">
+            <a href="">BIO</a>
+            <a href="">EDUCATION</a>
+            <a href="">JOBS</a>
+            <a href="">REST</a>
+        </div>
         <div class="profile Pic">
 
         </div>
