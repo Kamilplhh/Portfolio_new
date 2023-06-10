@@ -103,13 +103,13 @@
 
     <div class="aCwContent">
         <div class="aCwNavi">
-            <h1><a href="">BIO</a></h1>
-            <h1><a href="">EDUCATION</a></h1>
-            <h1><a href="">JOBS</a></h1>
-            <h1><a href="">REST</a></h1>
+            <h1><a href="#bio">BIO</a></h1>
+            <h1><a href="#education">EDUCATION</a></h1>
+            <h1><a href="#jobs">JOBS</a></h1>
+            <h1><a href="#rest">REST</a></h1>
         </div>
 
-        <div class="bio">
+        <div id="bio">
             <div class="profile Pic">
 
             </div>
@@ -119,16 +119,16 @@
             </div>
         </div>
 
-        <div class="education">
+        <div id="education">
 
         </div>
         
-        <div class="jobs">
+        <div id="jobs">
 
         </div>
 
-        <div class="rest">
-            
+        <div id="rest">
+
         </div>
     </div>
 </div>

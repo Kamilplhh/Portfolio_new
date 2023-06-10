@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .aCwcontent::-webkit-scrollbar {
@@ -22,16 +23,16 @@
 
 .aCwNavi a {
     color: white;
+    text-shadow: 1px 1px 3px black;
 }
 
 .aCwNavi a:hover {
     color: black;
 }
 
-.bio {
-    margin-top: 5.5%;
+#bio {
     display: flex;
-    height: 92%;
+    height: 100%;
 }
 
 .profile {
@@ -54,17 +55,17 @@
     background-color: black;
 }
 
-.education {
-    height: 92%;
+#education {
+    height: 100%;
     background-color: red;
 }
 
-.jobs {
-    height: 92%;
+#jobs {
+    height: 100%;
     background-color: green;
 }
 
-.rest {
-    height: 92%;
+#rest {
+    height: 100%;
     background-color: yellow;
 }
