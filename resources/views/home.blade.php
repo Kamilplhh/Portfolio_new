@@ -50,7 +50,7 @@
     <i class="fa-regular fa-x fa-xl exit"></i>
 
     <div class="sCwContent">
-        
+
     </div>
 </div>
 
@@ -64,7 +64,7 @@
     @endif
     <i class="fa-regular fa-x fa-xl exit"></i>
 
-{{-- Mail form --}}
+    {{-- Mail form --}}
 
     <div class="cCwContent">
         <center>
@@ -83,7 +83,7 @@
             </form>
         </div>
 
-{{-- Contact links section --}}
+        {{-- Contact links section --}}
 
         <div class="cCwContact">
             <div class="Icontact">
@@ -103,17 +103,32 @@
 
     <div class="aCwContent">
         <div class="aCwNavi">
-            <a href="">BIO</a>
-            <a href="">EDUCATION</a>
-            <a href="">JOBS</a>
-            <a href="">REST</a>
-        </div>
-        <div class="profile Pic">
-
+            <h1><a href="">BIO</a></h1>
+            <h1><a href="">EDUCATION</a></h1>
+            <h1><a href="">JOBS</a></h1>
+            <h1><a href="">REST</a></h1>
         </div>
 
-        <div class="profile Info">
+        <div class="bio">
+            <div class="profile Pic">
 
+            </div>
+
+            <div class="profile Info">
+
+            </div>
+        </div>
+
+        <div class="education">
+
+        </div>
+        
+        <div class="jobs">
+
+        </div>
+
+        <div class="rest">
+            
         </div>
     </div>
 </div>

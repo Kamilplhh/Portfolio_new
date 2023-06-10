@@ -1,35 +1,70 @@
 .aCwcontent {
-    height: 200%;
+    height: 100%;
     width: 100%;
-    display: flex;
+    overflow-y: scroll;
 }
 
+.aCwcontent::-webkit-scrollbar {
+    width: 0 !important
+    }
+
 .aCwNavi {
+    position: absolute;
     width: 100%;
-    height: 30%;
-    padding-top: 2%;
+    height: 10%;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.aCwNavi a {
+    color: white;
+}
+
+.aCwNavi a:hover {
+    color: black;
+}
+
+.bio {
+    margin-top: 5.5%;
+    display: flex;
+    height: 92%;
 }
 
 .profile {
     width: 50%;
-    height: 70%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    
 }
 
 .Pic {
     justify-content: flex-end;
     padding-right: 5%;
+    background-color: blue;
 }
 
 .Info {
     justify-content: center;
+    background-color: black;
+}
+
+.education {
+    height: 92%;
+    background-color: red;
+}
+
+.jobs {
+    height: 92%;
+    background-color: green;
+}
+
+.rest {
+    height: 92%;
+    background-color: yellow;
 }
