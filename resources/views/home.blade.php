@@ -111,11 +111,13 @@
 
         <div id="bio">
             <div class="profile Pic">
-
+                <img src='images/test.jpg' alt="" class="pfp">
             </div>
 
             <div class="profile Info">
+                <div class="pfInfo">
 
+                </div>
             </div>
         </div>
 

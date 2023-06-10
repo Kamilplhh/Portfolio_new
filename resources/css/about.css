@@ -47,12 +47,24 @@
 .Pic {
     justify-content: flex-end;
     padding-right: 5%;
-    background-color: blue;
+}
+
+.pfp {
+    height: 356px;
+    width: 356px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 12px 2px black;
 }
 
 .Info {
     justify-content: center;
-    background-color: black;
+}
+
+.pfInfo {
+    height: 356px;
+    width: 90%;
+    box-shadow: -1px 3px 12px 2px black;
+    border-radius: 20px;
 }
 
 #education {
