@@ -116,7 +116,7 @@
 
             <div class="profile Info">
                 <div class="pfInfo">
-
+                    <span id="typed2" class="headline"></span>
                 </div>
             </div>
         </div>

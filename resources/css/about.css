@@ -54,6 +54,11 @@
     width: 356px;
     border-radius: 20px;
     box-shadow: 1px 3px 12px 2px black;
+    transition: 0.2s ease;
+}
+
+.pfp:hover {
+    transform: scale(1.1);
 }
 
 .Info {
@@ -62,9 +67,22 @@
 
 .pfInfo {
     height: 356px;
-    width: 90%;
+    width: 85%;
     box-shadow: -1px 3px 12px 2px black;
     border-radius: 20px;
+    transition: 0.2s ease;
+    padding: 2%;
+}
+
+.pfInfo:hover {
+    transform: scale(1.1);
+}
+
+.headline {
+    margin-left: 46%;
+    width: 50%;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #education {

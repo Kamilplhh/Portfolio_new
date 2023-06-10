@@ -17,3 +17,10 @@ const typed = new Typed("#typed", {
     backSpeed: 100,
     loop: true
 })
+
+const typed2 = new Typed("#typed2", {
+    strings: ["Hello", "My name is Kamil", "Enjoy!"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true
+})
