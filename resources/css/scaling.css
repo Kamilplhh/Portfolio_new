@@ -56,7 +56,8 @@
     }
 
     .home {
-        font-size: 12px;
+        font-size: 14px;
+        letter-spacing: .1rem !important;
     }
 
     .cCwMail {

@@ -50,7 +50,12 @@
     <i class="fa-regular fa-x fa-xl exit"></i>
 
     <div class="sCwContent">
+        <div class="sCwBlock">
 
+        </div>
+        <div class="sCwBlock servRight">
+
+        </div>
     </div>
 </div>
 
