@@ -27,6 +27,27 @@
         width: 200px !important;
         font-size: 12px;
     }
+
+    .Pic {
+        width: 30% !important;
+    }
+
+    .Info {
+        width: 70% !important;
+    }
+
+    .pfp {
+        height: 256px !important;
+        width: 256px !important;
+    }
+
+    .pfInfo {
+        height: 256px !important;
+    }
+
+    .aCwNavi h1{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -64,6 +85,23 @@
     .exit {
         display: none !important;
     }
+
+    .Pic {
+        display: none !important;
+    }
+
+    .Info {
+        width: 100% !important;
+    }
+
+    .pfInfo {
+        height: 60% !important;
+    }
+
+    .eduInfo {
+        width: 85% !important;
+        height: 60% !important;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -94,5 +132,13 @@
 
     .mid {
         font-size: 8px !important;
+    }
+
+    .pfInfo{
+        font-size: 14px !important;
+    }
+
+    .aCwNavi h1{
+        font-size: 16px !important;
     }
 }
