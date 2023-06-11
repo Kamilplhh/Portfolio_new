@@ -106,31 +106,67 @@
             <h1><a href="#bio">BIO</a></h1>
             <h1><a href="#education">EDUCATION</a></h1>
             <h1><a href="#jobs">JOBS</a></h1>
-            <h1><a href="#rest">REST</a></h1>
+            <h1><a href="#skills">SKILLS</a></h1>
         </div>
 
         <div id="bio">
             <div class="profile Pic">
                 <img src='images/test.jpg' alt="" class="pfp">
             </div>
-
             <div class="profile Info">
                 <div class="pfInfo">
                     <span id="typed2" class="headline"></span>
+                    <h2>I'm 23 years old digital solutions developer, right now I'm into:
+                        <ul>
+                            <li><i class="fa-solid fa-computer"></i> Programming and a whole computer science stuff</li>
+                            <li><i class="fa-solid fa-volleyball"></i> Sport of any kind</li>
+                            <li><i class="fa-solid fa-music"></i> Music</li>
+                            <li><i class="fa-solid fa-user-astronaut"></i> Astronomy</li>
+                            <li><i class="fa-solid fa-gamepad"></i> Games</li>
+                        </ul>
+                    </h2>
                 </div>
             </div>
         </div>
 
         <div id="education">
-
+            <div class="eduInfo">
+                <ul>{{--
+                    @foreach($educations as $education)
+                        <li>{{ $education->description }}<br>
+                        {{ $education->started }} - {{ $education->ended }}
+                    </li>
+                    @endforeach
+                    --}}
+                </ul>
+            </div>
         </div>
-        
+
         <div id="jobs">
-
+            <div class="eduInfo">
+                <ul>{{--
+                    @foreach($jobs as $job)
+                        <li>
+                            {{ $job->description }}<br>
+                            {{ $job->started }} - {{ $job->ended }}
+                        </li>
+                    @endforeach
+                    --}}
+                </ul>
+            </div>
         </div>
 
-        <div id="rest">
-
+        <div id="skills">
+            <div class="eduInfo">
+                <ul>{{--
+                    @foreach($skills as $skill)
+                        <li>
+                            {{ $skill->description }}
+                        </li>
+                    @endforeach
+                    --}}
+                </ul>
+            </div>
         </div>
     </div>
 </div>

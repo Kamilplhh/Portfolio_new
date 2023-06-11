@@ -171,6 +171,7 @@
     transition: 0.2s linear;
     color: white;
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    z-index: 5;
 }
 
 .exit:hover {

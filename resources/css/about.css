@@ -7,7 +7,7 @@
 
 .aCwcontent::-webkit-scrollbar {
     width: 0 !important
-    }
+}
 
 .aCwNavi {
     position: absolute;
@@ -19,6 +19,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
+    z-index: 2;
 }
 
 .aCwNavi a {
@@ -74,28 +75,60 @@
     padding: 2%;
 }
 
+.pfInfo h2 {
+    font-size: 19px;
+    padding-top: 20px;
+}
+
 .pfInfo:hover {
     transform: scale(1.1);
 }
 
 .headline {
-    margin-left: 46%;
+    margin-left: 45%;
     width: 50%;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 #education {
     height: 100%;
     background-color: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.eduInfo {
+    height: 50%;
+    width: 66%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 2px black;
+    transition: 0.2s ease;
+}
+
+.eduInfo:hover {
+    transform: scale(1.1);
 }
 
 #jobs {
     height: 100%;
     background-color: green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-#rest {
+#skills {
     height: 100%;
     background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }

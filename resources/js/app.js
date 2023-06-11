@@ -21,6 +21,6 @@ const typed = new Typed("#typed", {
 const typed2 = new Typed("#typed2", {
     strings: ["Hello", "My name is Kamil", "Enjoy!"],
     typeSpeed: 100,
-    backSpeed: 100,
+    backSpeed: 50,
     loop: true
 })
