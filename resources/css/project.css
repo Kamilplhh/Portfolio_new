@@ -1,39 +1,24 @@
 .projectRow {
-    margin-top: 3%;
-    width: 100%;
+    width: 200%;
     height: 100%;
     margin-right: 0 !important;
     margin-left: 0 !important;
-    padding: 16px;
-}
-
-.projectgrid {
-    height: 50%;
-    padding: 16px;
-}
-
-.glass {
-    top: 0;
-    left: 0;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(48, 177, 216, 0.2);
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .Pshowcase {
+    height: 50%;
+    width: 25%;
+    margin: 16px;
     border-radius: 20px;
     border: 1px solid white;
-    height: 100%;
+    transition: linear;
+    transform: translateX(0%);
 }
 
-#next {
+.Pshowcase:hover {
     cursor: pointer;
-    font-size: 32px;
-    font-family: 'Cherry Bomb One', cursive;
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
 }

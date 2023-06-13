@@ -24,3 +24,26 @@ const typed2 = new Typed("#typed2", {
     backSpeed: 50,
     loop: true
 })
+
+const element = $('.Pshowcase');
+
+function slider(v) {
+    let reversed = JSON.parse(JSON.stringify(v)).reverse();
+
+    $(v[0]).animate(v[1], {
+        duration: 15000,
+        step: function (val) {
+            element.css("transform", `translateX(${val}%)`);
+        },
+        done: function () {
+            slider(reversed)
+        }
+    })
+};
+
+if ($(window).width() < 960) {
+    slider([{ x: 50 }, { x: -300 }])
+}
+else {
+    slider([{ x: 25 }, { x: -100 }])
+}
