@@ -1,18 +1,19 @@
 .projectRow {
-    width: 200%;
+    width: 180%;
     height: 100%;
     margin-right: 0 !important;
     margin-left: 0 !important;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
+    padding: 20px 0px;
+    gap: 30px;
 }
 
 .Pshowcase {
-    height: 50%;
+    height: 45%;
     width: 25%;
-    margin: 16px;
     border-radius: 20px;
     border: 1px solid white;
     transition: linear;

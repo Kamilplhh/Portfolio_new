@@ -41,7 +41,7 @@ function slider(v) {
     })
 };
 
-if ($(window).width() < 960) {
+if ($(window).width() < 1000) {
     slider([{ x: 50 }, { x: -300 }])
 }
 else {

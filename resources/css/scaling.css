@@ -50,6 +50,12 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .projectRow {
+        flex-wrap: nowrap !important;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .center {
         font-size: 16px;
