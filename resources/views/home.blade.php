@@ -35,6 +35,7 @@
         <div class="Pshowcase">3</div>
         <div class="Pshowcase">4</div>
         <div class="Pshowcase">5</div>
+        <div class="Pshowcase">6</div>
     </div>
 </div>
 

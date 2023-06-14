@@ -45,14 +45,26 @@
         height: 256px !important;
     }
 
-    .aCwNavi h1{
+    .aCwNavi h1 {
         font-size: 20px;
+    }
+
+    .projectRow {
+        width: 160% !important;
+    }
+
+    .Pshowcase {
+        width: 25% !important;
     }
 }
 
 @media only screen and (max-width: 1000px) {
     .projectRow {
-        flex-wrap: nowrap !important;
+        width: 200% !important; 
+    }
+
+    .Pshowcase {
+        width: 30% !important;
     }
 }
 
@@ -111,7 +123,22 @@
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .projectRow {
+        flex-wrap: nowrap !important;
+        width: 2400px !important;
+    }
+
+    .Pshowcase {
+        width: 300px !important;
+        height: 400px !important;
+    }
+}
 @media only screen and (max-width: 400px) {
+    .Pshowcase {
+        width: 200px !important;
+        height: 300px !important;
+    }
     .navbar {
         font-size: 12px !important;
         letter-spacing: .1rem !important;
@@ -141,11 +168,11 @@
         font-size: 8px !important;
     }
 
-    .pfInfo{
+    .pfInfo {
         font-size: 14px !important;
     }
 
-    .aCwNavi h1{
+    .aCwNavi h1 {
         font-size: 16px !important;
     }
 }

@@ -29,9 +29,8 @@ const element = $('.Pshowcase');
 
 function slider(v) {
     let reversed = JSON.parse(JSON.stringify(v)).reverse();
-
     $(v[0]).animate(v[1], {
-        duration: 15000,
+        duration: 10000,
         step: function (val) {
             element.css("transform", `translateX(${val}%)`);
         },
@@ -41,9 +40,19 @@ function slider(v) {
     })
 };
 
-if ($(window).width() < 1000) {
-    slider([{ x: 50 }, { x: -300 }])
+let screenWidth = $(window).width();
+
+if (screenWidth > 1400) {
+    slider([{ x: 10 }, { x: -40 }])
 }
 else {
-    slider([{ x: 25 }, { x: -100 }])
+    if (screenWidth > 1000 && screenWidth <= 1400) {
+        slider([{ x: 10 }, { x: -90 }])
+    } else if (screenWidth > 700 && screenWidth <= 1000) {
+        slider([{ x: 10 }, { x: -160 }])
+    } else if (screenWidth > 400 && screenWidth <= 700) {
+        slider([{ x: 20 }, { x: -500 }])
+    } else {
+        slider([{ x: 5 }, { x: -577 }])
+    }
 }
