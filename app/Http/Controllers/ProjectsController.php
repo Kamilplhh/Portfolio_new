@@ -22,6 +22,6 @@ class ProjectsController extends Controller
         $skills = $this->historyRepository->getSkills();
         $projects = Projects::all();
 
-        return view('/', compact('projects', 'jobs', 'educations', 'skills'));
+        return view('home', compact('projects', 'jobs', 'educations', 'skills'));
     }
 }

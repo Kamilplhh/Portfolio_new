@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Contact;
+use App\Http\Controllers\ProjectsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [ProjectsController::class, 'getData']);
 
 Route::post('/send-email', [Contact::class, 'sendEmail'])->name('send.email');

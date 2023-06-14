@@ -131,40 +131,37 @@
 
         <div id="education">
             <div class="eduInfo">
-                <ul>{{--
+                <ul>
                     @foreach($educations as $education)
                         <li>{{ $education->description }}<br>
                         {{ $education->started }} - {{ $education->ended }}
                     </li>
                     @endforeach
-                    --}}
                 </ul>
             </div>
         </div>
 
         <div id="jobs">
             <div class="eduInfo">
-                <ul>{{--
+                <ul>
                     @foreach($jobs as $job)
                         <li>
                             {{ $job->description }}<br>
                             {{ $job->started }} - {{ $job->ended }}
                         </li>
                     @endforeach
-                    --}}
                 </ul>
             </div>
         </div>
 
         <div id="skills">
             <div class="eduInfo">
-                <ul>{{--
+                <ul>
                     @foreach($skills as $skill)
                         <li>
                             {{ $skill->description }}
                         </li>
                     @endforeach
-                    --}}
                 </ul>
             </div>
         </div>
