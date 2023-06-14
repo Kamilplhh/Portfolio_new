@@ -30,12 +30,13 @@
 <div class="block pCw">
     <i class="fa-regular fa-x fa-xl exit"></i>
     <div class="projectRow">
-        <div class="Pshowcase">1</div>
-        <div class="Pshowcase">2</div>
-        <div class="Pshowcase">3</div>
-        <div class="Pshowcase">4</div>
-        <div class="Pshowcase">5</div>
-        <div class="Pshowcase">6</div>
+        @foreach($projects as $project)
+        <a class="Pshowcase" href="{{ $project->url }}" target="_blank">
+            <div>
+                {{ $project->id }}
+            </div>
+        </a>
+        @endforeach
     </div>
 </div>
 
@@ -133,7 +134,7 @@
             <div class="eduInfo">
                 <ul>
                     @foreach($educations as $education)
-                        <li>{{ $education->description }}<br>
+                    <li>{{ $education->description }}<br>
                         {{ $education->started }} - {{ $education->ended }}
                     </li>
                     @endforeach
@@ -145,10 +146,10 @@
             <div class="eduInfo">
                 <ul>
                     @foreach($jobs as $job)
-                        <li>
-                            {{ $job->description }}<br>
-                            {{ $job->started }} - {{ $job->ended }}
-                        </li>
+                    <li>
+                        {{ $job->description }}<br>
+                        {{ $job->started }} - {{ $job->ended }}
+                    </li>
                     @endforeach
                 </ul>
             </div>
@@ -158,9 +159,9 @@
             <div class="eduInfo">
                 <ul>
                     @foreach($skills as $skill)
-                        <li>
-                            {{ $skill->description }}
-                        </li>
+                    <li>
+                        {{ $skill->description }}
+                    </li>
                     @endforeach
                 </ul>
             </div>

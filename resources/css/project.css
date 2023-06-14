@@ -16,10 +16,12 @@
     width: 25%;
     border-radius: 20px;
     border: 1px solid white;
-    transition: linear;
+    transition: 0.3s linear;
     transform: translateX(0%);
 }
 
 .Pshowcase:hover {
     cursor: pointer;
+    outline-offset: 10px;
+    outline: 3px solid rgb(37, 38, 46);
 }
