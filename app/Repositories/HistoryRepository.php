@@ -3,27 +3,27 @@
 namespace App\Repositories;
 
 use App\Interfaces\HistoryRepositoryInterface;
-use App\Models\History;
+use App\Models\histories;
 
 class HistoryRepository implements HistoryRepositoryInterface 
 {
     public function getJobsHistory() 
     {
-        return History::where('type', 'Job')
+        return Histories::where('type', 'Job')
                             ->orderBy('started', 'DESC')
                             ->get();
     }
 
     public function getEducationHistory() 
     {
-        return History::where('type', 'Education')
+        return Histories::where('type', 'Education')
                             ->orderBy('started', 'DESC')
                             ->get();
     }
    
     public function getSkills() 
     {
-        return History::where('type', 'Skills')
+        return Histories::where('type', 'Skills')
                             ->get();
     }
 }
