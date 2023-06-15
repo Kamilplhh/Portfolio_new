@@ -32,8 +32,9 @@
     <div class="projectRow">
         @foreach($projects as $project)
         <a class="Pshowcase" href="{{ $project->url }}" target="_blank">
-            <div class="showProject">
-                
+            <div class="pBG" style="background-image: url({{ url('images/'.$project->src) }});">    
+                <div class="showProject">     
+                </div>
             </div>
         </a>
         @endforeach

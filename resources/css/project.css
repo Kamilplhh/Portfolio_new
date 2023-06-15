@@ -28,17 +28,25 @@
 
 .Pshowcase:hover .showProject {
     animation: showProject 0.5s ease-in 0s 1 normal forwards;
+    display: block;
+}
+
+.pBG {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: fixed;
 }
 
 .showProject{
+    display: none;
     width: 100%;
     height: 100%;
     color: black;
     border-radius: 20px;
     opacity: 0.4 !important;
     background-color: blueviolet;
-    transition: .5s ease-in;
-    animation: showProject-reverse 0.5s ease-in 0s 1 normal forwards;
 }
 
 @keyframes showProject {
@@ -50,17 +58,5 @@
 	100% {
 		opacity: 1;
         transform: scale(1);
-	}
-}
-
-@keyframes showProject-reverse {
-	0% {
-		opacity: 1;
-        transform: scale(0.7);
-	}
-
-	100% {
-        opacity: 0;
-        transform: scale(0);
 	}
 }
