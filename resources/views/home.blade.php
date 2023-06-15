@@ -34,6 +34,7 @@
         <a class="Pshowcase" href="{{ $project->url }}" target="_blank">
             <div class="pBG" style="background-image: url({{ url('images/'.$project->src) }});">    
                 <div class="showProject">     
+                {{ $project->technology->src }}
                 </div>
             </div>
         </a>
