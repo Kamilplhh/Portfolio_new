@@ -22,8 +22,8 @@
     padding: 5px 0 5px 15px;
     transition: 0.5s ease-out;
     margin: 5px 0px;
-    color: rgb(153, 150, 150);
-    background-color: rgb(37, 38, 46);
+    color: black;
+    background-color: #f5ece5;
 }
 
 .form-input:focus {
@@ -36,8 +36,8 @@
     transition: 0.2s linear;
     border-radius: 10px;
     border: 0;
-    background-color: rgb(37, 38, 46);
-    color: white;
+    background-color: #f5ece5;
+    color: black;
     margin-left: 100px;
     width: 200px !important;
 }
@@ -73,12 +73,12 @@
 
 .contact-icon {
     margin: 10px 0;
-    border: 1px solid rgb(37, 38, 46);
+    border: 1px solid #f5ece5;
     padding: 25px 12px;
-    background-color: rgb(37, 38, 46);
+    background-color: #f5ece5;
     border-radius: 50%;
     transition: 0.2s ease-in;
-    color: white;
+    color: black;
 }
 
 .contact-icon:hover {

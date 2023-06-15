@@ -34,7 +34,10 @@
         <a class="Pshowcase" href="{{ $project->url }}" target="_blank">
             <div class="pBG" style="background-image: url({{ url('images/'.$project->src) }});">    
                 <div class="showProject">     
-                {{ $project->technology->src }}
+                @for ($i = 0; $i <= 6; $i++)
+                    <?php $src = 'src'.$i; ?>
+                    {{ $project->technology->$src }}
+                @endfor
                 </div>
             </div>
         </a>

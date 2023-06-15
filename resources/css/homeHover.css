@@ -1,5 +1,5 @@
 .projects:hover {
-    background-color: rgb(75, 162, 168);
+    background-color: #429e9d;
     color: white;
     width: 70%;
     height: 50%;
@@ -7,7 +7,7 @@
 }
 
 .contact:hover {
-    background-color: rgb(69, 209, 88);
+    background-color: #7cd4ac;
     color: white;
     width: 50%;
     height: 70%;
@@ -23,7 +23,7 @@
 }
 
 .services:hover {
-    background-color: rgb(215, 218, 41);
+    background-color: #fbda03;
     color: white;
     width: 70%;
     height: 50%;
