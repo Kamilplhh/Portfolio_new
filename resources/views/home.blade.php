@@ -32,14 +32,21 @@
     <div class="projectRow">
         @foreach($projects as $project)
         <a class="Pshowcase" href="{{ $project->url }}" target="_blank">
-            <div class="pBG" style="background-image: url({{ url('images/'.$project->src) }});">    
-                <div class="showProject">     
-                @for ($i = 0; $i <= 6; $i++)
-                    <?php $src = 'src'.$i; ?>
-                    {{ $project->technology->$src }}
-                @endfor
+            <div class="pBG" style="background-image: url({{ url('images/'.$project->src) }});">
+                <div class="showProject">
+                    <center>
+                        <h3>{{ $project->name }} <br></h3>      
+                        Technologies used:
+                    </center>
+                    <div class="technologies">
+                        @for ($i = 0; $i <= 6; $i++) 
+                            <?php $src = 'src' . $i; ?> 
+                            {{ $project->technology->$src }} 
+                        @endfor 
+                    </div>
+
+                    </div>
                 </div>
-            </div>
         </a>
         @endforeach
     </div>
