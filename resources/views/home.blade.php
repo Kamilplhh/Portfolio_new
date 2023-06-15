@@ -32,8 +32,8 @@
     <div class="projectRow">
         @foreach($projects as $project)
         <a class="Pshowcase" href="{{ $project->url }}" target="_blank">
-            <div>
-                {{ $project->id }}
+            <div class="showProject">
+                
             </div>
         </a>
         @endforeach
