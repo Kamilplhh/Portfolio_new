@@ -6,6 +6,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    font-family: 'Merriweather', serif;
 }
 
 .sCwcontent::-webkit-scrollbar {
@@ -15,9 +16,10 @@
 .sCwBlock {
     width: 50%;
     height: 100%;
-    
+    padding-top: 20px;
 }
 
-.servRight {
-    
+.sCwData {
+    width: 100%;
+    height: auto;
 }

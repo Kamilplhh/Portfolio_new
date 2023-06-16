@@ -35,18 +35,16 @@
             <div class="pBG" style="background-image: url({{ url('images/'.$project->src) }});">
                 <div class="showProject">
                     <center>
-                        <h3>{{ $project->name }} <br></h3>      
+                        <h3>{{ $project->name }} <br></h3>
                         <h4>Technologies used:</h4>
                     </center>
                     <div class="technologies">
-                        @for ($i = 0; $i <= 6; $i++) 
-                            <?php $src = 'src' . $i; ?> 
-                            <img src="{{ url('images/technology/'.$project->technology->$src) }}"  alt="abc" onerror="this.style.display='none'">
-                        @endfor 
+                        @for ($i = 0; $i <= 6; $i++) <?php $src = 'src' . $i; ?> <img src="{{ url('images/technology/'.$project->technology->$src) }}" alt="abc" onerror="this.style.display='none'">
+                            @endfor
                     </div>
 
-                    </div>
                 </div>
+            </div>
         </a>
         @endforeach
     </div>
@@ -59,10 +57,26 @@
 
     <div class="sCwContent">
         <div class="sCwBlock">
-
+            <center>
+                <h3>Services currently working on</h3>
+            </center>
+            <div class="sCwData">
+                <ul>
+                    <li>Mymeal v2</li>
+                    <li>Księbartek v2</li>
+                </ul>
+            </div>
         </div>
-        <div class="sCwBlock servRight">
-
+        <div class="sCwBlock">
+            <center>
+                <h3>Services already done</h3>
+            </center>
+            <div class="sCwData">
+                <ul>
+                    <li>Online shop</li>
+                    <li></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -144,6 +158,9 @@
 
         <div id="education">
             <div class="eduInfo">
+                <center>
+                    <h3>Education</h3>
+                </center>
                 <ul>
                     @foreach($educations as $education)
                     <li>{{ $education->description }}<br>
@@ -156,6 +173,9 @@
 
         <div id="jobs">
             <div class="eduInfo">
+                <center>
+                    <h3>Jobs</h3>
+                </center>
                 <ul>
                     @foreach($jobs as $job)
                     <li>
@@ -169,6 +189,9 @@
 
         <div id="skills">
             <div class="eduInfo">
+                <center>
+                    <h3>Skills</h3>
+                </center>
                 <ul>
                     @foreach($skills as $skill)
                     <li>
