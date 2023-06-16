@@ -36,12 +36,12 @@
                 <div class="showProject">
                     <center>
                         <h3>{{ $project->name }} <br></h3>      
-                        Technologies used:
+                        <h4>Technologies used:</h4>
                     </center>
                     <div class="technologies">
                         @for ($i = 0; $i <= 6; $i++) 
                             <?php $src = 'src' . $i; ?> 
-                            {{ $project->technology->$src }} 
+                            <img src="{{ url('images/technology/'.$project->technology->$src) }}"  alt="abc" onerror="this.style.display='none'">
                         @endfor 
                     </div>
 
