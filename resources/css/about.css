@@ -3,6 +3,7 @@
     width: 100%;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
 }
 
 .aCwcontent::-webkit-scrollbar {

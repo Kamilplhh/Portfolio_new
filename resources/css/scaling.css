@@ -56,11 +56,16 @@
     .Pshowcase {
         width: 25% !important;
     }
+
+    .technologies img {
+        width: 62px !important;
+        height: 62px !important;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
     .projectRow {
-        width: 200% !important; 
+        width: 200% !important;
     }
 
     .Pshowcase {
@@ -121,6 +126,19 @@
         width: 85% !important;
         height: 60% !important;
     }
+
+    .showProject h3 {
+        font-size: 18px !important;
+    }
+
+    .showProject h4 {
+        font-size: 14px !important;
+    }
+
+    .technologies img {
+        width: 58px !important;
+        height: 58px !important;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -134,11 +152,13 @@
         height: 400px !important;
     }
 }
+
 @media only screen and (max-width: 400px) {
     .Pshowcase {
         width: 200px !important;
         height: 300px !important;
     }
+
     .navbar {
         font-size: 12px !important;
         letter-spacing: .1rem !important;
@@ -174,5 +194,15 @@
 
     .aCwNavi h1 {
         font-size: 16px !important;
+    }
+
+    .technologies {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .technologies img {
+        width: 40px !important;
+        height: 40px !important;
     }
 }
