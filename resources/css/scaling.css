@@ -159,6 +159,7 @@
     .navbar {
         font-size: 14px !important;
         letter-spacing: .1rem !important;
+        border: 2px solid black !important;
     }
 
     .home {
@@ -182,7 +183,8 @@
     }
 
     .content {
-        padding: 40px !important;
+        padding: 38px !important;
+        border: 1px solid black !important;
     }
 
     .mid {
@@ -222,7 +224,7 @@
     }
 
     .content {
-        padding: 30px !important;
+        padding: 28px !important;
     }
 
     .mid {
