@@ -42,7 +42,6 @@
                         @for ($i = 0; $i <= 6; $i++) <?php $src = 'src' . $i; ?> <img src="{{ url('images/technology/'.$project->technology->$src) }}" alt="abc" onerror="this.style.display='none'">
                             @endfor
                     </div>
-
                 </div>
             </div>
         </a>
@@ -62,8 +61,11 @@
             </center>
             <div class="sCwData">
                 <ul>
-                    <li>Mymeal v2</li>
-                    <li>Księbartek v2</li>
+                    @foreach($servicesOutgoing as $Outgoing)
+                    <li>
+                        {{ $Outgoing->name }}
+                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
@@ -73,8 +75,11 @@
             </center>
             <div class="sCwData">
                 <ul>
-                    <li>Online shop</li>
-                    <li></li>
+                    @foreach($servicesDone as $Done)
+                    <li>
+                        {{ $Done->name }}
+                    </li>
+                    @endforeach
                 </ul>
             </div>
         </div>
