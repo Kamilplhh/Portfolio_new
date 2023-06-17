@@ -138,3 +138,7 @@
     align-content: center;
     font-weight: bold;
 }
+
+#skills ul {
+    column-count: 3;
+}

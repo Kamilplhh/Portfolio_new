@@ -151,6 +151,47 @@
         width: 300px !important;
         height: 400px !important;
     }
+
+    #skills ul {
+        column-count: 2 !important;
+    }
+
+    .navbar {
+        font-size: 14px !important;
+        letter-spacing: .1rem !important;
+    }
+
+    .home {
+        font-size: 14px !important;
+        letter-spacing: .1rem !important;
+    }
+
+    .top,
+    .bottom,
+    .Homebuttons {
+        height: 40px !important;
+    }
+
+    .bottom {
+        padding-top: 4px !important;
+    }
+
+    .left,
+    .right {
+        width: 40px !important;
+    }
+
+    .content {
+        padding: 40px !important;
+    }
+
+    .mid {
+        font-size: 14px !important;
+    }
+
+    .block {
+        padding: 40px !important;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -188,6 +229,10 @@
         font-size: 8px !important;
     }
 
+    .block {
+        padding: 30px !important;
+    }
+
     .pfInfo {
         font-size: 14px !important;
     }
@@ -204,5 +249,33 @@
     .technologies img {
         width: 40px !important;
         height: 40px !important;
+    }
+
+    #skills ul {
+        column-count: 1 !important;
+    }
+
+    .aCwNavi {
+        padding: 30px !important;
+    }
+
+    .aCwNavi h1{
+        font-size: 15px !important;
+    }
+
+    .headline {
+        margin-left: 0% !important;
+    }
+
+    .eduInfo li {
+        font-size: 12px !important;
+    } 
+
+    .eduInfo ul, .pfInfo ul {
+        padding-left: 20px !important;
+    }
+
+    .pfInfo h2, li {
+        font-size: 14px !important;
     }
 }
