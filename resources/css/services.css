@@ -19,7 +19,12 @@
     padding-top: 20px;
 }
 
+.sCwBlock h3 {
+    font-weight: bold;
+}
+
 .sCwData {
     width: 100%;
     height: auto;
+    font-weight: bold;
 }

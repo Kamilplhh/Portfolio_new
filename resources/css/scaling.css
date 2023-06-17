@@ -61,6 +61,10 @@
         width: 62px !important;
         height: 62px !important;
     }
+
+    .sCwData {
+        column-count: 2 !important;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -70,6 +74,14 @@
 
     .Pshowcase {
         width: 30% !important;
+    }
+
+    .sCwData {
+        font-size: 14px !important;
+    }
+
+    .sCwBlock h3 {
+        font-size: 18px !important;
     }
 }
 
@@ -139,6 +151,10 @@
         width: 58px !important;
         height: 58px !important;
     }
+
+    .sCwData {
+        column-count: 1 !important;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -193,6 +209,14 @@
 
     .block {
         padding: 40px !important;
+    }
+
+    .sCwData {
+        font-size: 12px !important;
+    }
+
+    .sCwBlock h3 {
+        font-size: 15px !important;
     }
 }
 
