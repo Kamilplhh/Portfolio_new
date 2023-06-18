@@ -39,4 +39,5 @@
     background-color: aliceblue;
     height: 80%;
     width: 80%;
+    transition: .5s ease-in;
 }

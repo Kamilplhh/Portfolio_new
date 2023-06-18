@@ -160,8 +160,9 @@ $("#navServices").on("click", function () {
     $(".sCw").attr("style", "display:block !important");
 })
 
-$("#openModal").on("click", function() {
-    $(".modal").attr("style", "display:block !important");
+$(".openModal").on("click", function() {
+    let id = event.target.id
+    $('#modal'+id).attr("style", "display:block !important");
 })
 
 //
