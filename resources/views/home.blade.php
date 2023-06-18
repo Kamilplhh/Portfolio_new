@@ -64,7 +64,8 @@
                     @foreach($servicesOutgoing as $Outgoing)
                     <li>
                         <a class="openModal" id="{{ $Outgoing->id }}">{{ $Outgoing->name }}</a>
-                        <div class="modal" id="modal{{ $Outgoing->id }}">{{ $Outgoing->description }}
+                        <div class="modal" id="modal{{ $Outgoing->id }}">
+                            {{ $Outgoing->description }}<br>
                             <i class="fa-regular fa-x fa-xl exitModal"></i>
                         </div>
                     </li>
@@ -81,7 +82,9 @@
                     @foreach($servicesDone as $Done)
                     <li>
                         <a class="openModal" id="{{ $Done->id }}">{{ $Done->name }}</a>
-                        <div class="modal" id="modal{{ $Done->id }}">{{ $Done->description }}
+                        <div class="modal" id="modal{{ $Done->id }}">
+                            {{ $Done->description }}<br>
+                            <a href="{{ $Done->url }}">Project link</a> 
                             <i class="fa-regular fa-x fa-xl exitModal"></i>
                         </div>
                     </li>
