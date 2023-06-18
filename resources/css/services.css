@@ -28,3 +28,15 @@
     height: auto;
     font-weight: bold;
 }
+
+.openModal {
+    cursor: pointer;
+}
+
+.modal {
+    border-radius: 20px;
+    margin: 5% 0 0 10%;
+    background-color: aliceblue;
+    height: 80%;
+    width: 80%;
+}

@@ -160,6 +160,10 @@ $("#navServices").on("click", function () {
     $(".sCw").attr("style", "display:block !important");
 })
 
+$("#openModal").on("click", function() {
+    $(".modal").attr("style", "display:block !important");
+})
+
 //
 //Exit
 //

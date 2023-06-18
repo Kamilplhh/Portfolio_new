@@ -63,7 +63,8 @@
                 <ul>
                     @foreach($servicesOutgoing as $Outgoing)
                     <li>
-                        {{ $Outgoing->name }}
+                        <a class="openModal" id="{{ $Outgoing->id }}">{{ $Outgoing->name }}</a>
+                        <div class="modal" id="{{ $Outgoing->id }}">{{ $Outgoing->description }}</div>
                     </li>
                     @endforeach
                 </ul>
@@ -77,7 +78,8 @@
                 <ul>
                     @foreach($servicesDone as $Done)
                     <li>
-                        {{ $Done->name }}
+                        <a class="openModal" id="{{ $Done->id }}">{{ $Done->name }}</a>
+                        <div class="modal" id="{{ $Done->id }}">{{ $Done->description }}</div>
                     </li>
                     @endforeach
                 </ul>
