@@ -161,8 +161,11 @@ $("#navServices").on("click", function () {
 })
 
 $(".openModal").on("click", function() {
-    let id = event.target.id
-    $('#modal'+id).attr("style", "display:block !important");
+    $('#modal'+event.target.id).attr("style", "display:block !important");
+})
+
+$(".exitModal").on("click", function() {
+    $('.exitModal').parent().attr("style", "display:none !important");
 })
 
 //

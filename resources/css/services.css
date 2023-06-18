@@ -34,10 +34,22 @@
 }
 
 .modal {
+    padding: 2%;
     border-radius: 20px;
     margin: 5% 0 0 10%;
     background-color: aliceblue;
     height: 80%;
     width: 80%;
     transition: .5s ease-in;
+}
+
+.exitModal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    color: white;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    z-index: 5;
 }
