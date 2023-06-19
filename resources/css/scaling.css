@@ -218,6 +218,13 @@
     .sCwBlock h3 {
         font-size: 15px !important;
     }
+
+    .modal {
+        height: 80% !important;
+        width: 80% !important;
+        margin: 15% 10% !important;
+        font-size: 16px !important;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -302,6 +309,10 @@
     }
 
     .pfInfo h2, li {
+        font-size: 14px !important;
+    }
+
+    .modal {
         font-size: 14px !important;
     }
 }

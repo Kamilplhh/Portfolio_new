@@ -148,7 +148,7 @@ $(".exitModal").on("click", function () {
     toggleAnimation(parent, 'Out');
     setTimeout(function () {
         $(parent).attr("style", "display:none !important");
-    }, 700);
+    }, 500);
 })
 
 //
