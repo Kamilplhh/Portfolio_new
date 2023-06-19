@@ -161,7 +161,10 @@ $("#navServices").on("click", function () {
 })
 
 $(".openModal").on("click", function() {
-    $('#modal'+event.target.id).attr("style", "display:block !important");
+    let child = $('#modal'+event.target.id)
+    console.log(child);
+    $(child).attr("style", "display:block !important");
+    toggleAnimation(child, 'dropDown');
 })
 
 $(".exitModal").on("click", function() {

@@ -65,7 +65,9 @@
                     <li>
                         <a class="openModal" id="{{ $Outgoing->id }}">{{ $Outgoing->name }}</a>
                         <div class="modal" id="modal{{ $Outgoing->id }}">
-                            {{ $Outgoing->description }}<br>
+                            <center>
+                                {{ $Outgoing->description }}
+                            </center>
                             <i class="fa-regular fa-x fa-xl exitModal"></i>
                         </div>
                     </li>
@@ -83,8 +85,10 @@
                     <li>
                         <a class="openModal" id="{{ $Done->id }}">{{ $Done->name }}</a>
                         <div class="modal" id="modal{{ $Done->id }}">
-                            {{ $Done->description }}<br>
-                            <a href="{{ $Done->url }}">Project link</a> 
+                            <center>
+                                {{ $Done->description }}<br>
+                                <a href="{{ $Done->url }}">Project link</a> 
+                            </center>
                             <i class="fa-regular fa-x fa-xl exitModal"></i>
                         </div>
                     </li>

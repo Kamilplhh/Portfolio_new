@@ -53,3 +53,53 @@
     text-shadow: 1px 1px 3px rgb(0, 0, 0);
     z-index: 5;
 }
+
+.animationdropDown {
+    animation: drop 0.7s ease 0s 1 normal forwards;
+}
+
+@keyframes drop {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-95px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-44px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-22px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
