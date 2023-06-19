@@ -162,13 +162,16 @@ $("#navServices").on("click", function () {
 
 $(".openModal").on("click", function() {
     let child = $('#modal'+event.target.id)
-    console.log(child);
     $(child).attr("style", "display:block !important");
     toggleAnimation(child, 'dropDown');
 })
 
 $(".exitModal").on("click", function() {
-    $('.exitModal').parent().attr("style", "display:none !important");
+    let parent = $('.exitModal').parent();
+    toggleAnimation(parent, 'Out');
+    setTimeout(function () {
+    $(parent).attr("style", "display:none !important");  
+    },700);
 })
 
 //

@@ -58,6 +58,10 @@
     animation: drop 0.7s ease 0s 1 normal forwards;
 }
 
+.animationOut {
+    animation: bye .7s ease 0s 1 normal forwards; 
+}
+
 @keyframes drop {
 	0% {
 		animation-timing-function: ease-in;
@@ -101,5 +105,15 @@
 		animation-timing-function: ease-out;
 		opacity: 1;
 		transform: translateY(0px);
+	}
+}
+
+@keyframes bye {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
 	}
 }
