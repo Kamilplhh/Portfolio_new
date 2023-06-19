@@ -36,10 +36,10 @@
 .modal {
     padding: 2%;
     border-radius: 20px;
-    margin: 5% 0 0 10%;
+    margin: 10% 25%;
     background-color: aliceblue;
-    height: 80%;
-    width: 80%;
+    height: 50%;
+    width: 50%;
     transition: .5s ease-in;
 }
 
@@ -66,7 +66,7 @@
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
-		transform: translateY(-95px);
+		transform: translateY(-195px);
 	}
 
 	24% {
@@ -75,17 +75,17 @@
 
 	40% {
 		animation-timing-function: ease-in;
-		transform: translateY(-44px);
+		transform: translateY(-144px);
 	}
 
 	65% {
 		animation-timing-function: ease-in;
-		transform: translateY(-22px);
+		transform: translateY(-72px);
 	}
 
 	82% {
 		animation-timing-function: ease-in;
-		transform: translateY(-12px);
+		transform: translateY(-22px);
 	}
 
 	93% {

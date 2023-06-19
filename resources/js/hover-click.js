@@ -161,6 +161,7 @@ $("#navServices").on("click", function () {
 })
 
 $(".openModal").on("click", function() {
+    $('.modal').attr("style", "display:none !important"); 
     let child = $('#modal'+event.target.id)
     $(child).attr("style", "display:block !important");
     toggleAnimation(child, 'dropDown');
