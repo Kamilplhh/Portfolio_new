@@ -76,7 +76,7 @@
     transition: 0.2s ease;
     padding: 2%;
     color: white;
-    text-shadow: 1px 3px 4px rgba(66, 68, 90, 1);
+    text-shadow: 2px 3px 1px rgba(66, 68, 90, 1);
 }
 
 .pfInfo h2 {
@@ -105,7 +105,7 @@
     align-content: center;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 3px 4px rgba(66, 68, 90, 1);
+    text-shadow: 2px 3px 1px rgb(0, 0, 0);
 }
 
 .eduInfo {

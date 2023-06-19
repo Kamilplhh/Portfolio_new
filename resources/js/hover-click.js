@@ -26,20 +26,20 @@ function displayNone(x) {
         $(".Homebuttons").attr("style", "display:none !important");
     }
 }
-//fix
-// function set1(x,y,z) {
-//     $("."+x).toggleClass('smallH');
-//     $("."+y).toggleClass('bigH');
-//     $("."+z).toggleClass('smallW');
-//     $(".mid").toggleClass('smallM');
-// }
 
-// function set2(x,y,z) {
-//     $("."+x).toggleClass('smallW2');
-//     $("."+y).toggleClass('smallH2');
-//     $("."+z).toggleClass('bigW');
-//     $(".mid").toggleClass('bigM');
-// }
+function set1(x, y, z) {
+    $("." + x).toggleClass('smallH');
+    $("." + y).toggleClass('bigH');
+    $("." + z).toggleClass('smallW');
+    $(".mid").toggleClass('smallM');
+}
+
+function set2(x,y,z) {
+    $("."+x).toggleClass('smallW2');
+    $("."+y).toggleClass('smallH2');
+    $("."+z).toggleClass('bigW');
+    $(".mid").toggleClass('bigM');
+}
 
 //
 //Home
@@ -52,17 +52,11 @@ $("#navHome").on("click", function () {
 //Projects
 //
 $(".projects").on("mouseover", function () {
-    $(".contact").toggleClass('smallH');
-    $(".about").toggleClass('bigH');
-    $(".services").toggleClass('smallW');
-    $(".mid").toggleClass('smallM');
+    set1('contact', 'about', 'services');
 });
 
 $(".projects").on("mouseout", function () {
-    $(".contact").removeClass('smallH');
-    $(".about").removeClass('bigH');
-    $(".services").removeClass('smallW');
-    $(".mid").removeClass('smallM');
+    set1('contact', 'about', 'services');
 });
 
 $(".projects").on("click", function () {
@@ -80,17 +74,11 @@ $("#navProject").on("click", function () {
 //Contact 
 //
 $(".contact").on("mouseover", function () {
-    $(".projects").toggleClass('smallW2');
-    $(".about").toggleClass('smallH2');
-    $(".services").toggleClass('bigW');
-    $(".mid").toggleClass('bigM');
+    set2('projects', 'about', 'services');
 });
 
 $(".contact").on("mouseout", function () {
-    $(".projects").removeClass('smallW2');
-    $(".about").removeClass('smallH2');
-    $(".services").removeClass('bigW');
-    $(".mid").removeClass('bigM');
+    set2('projects', 'about', 'services');
 });
 
 $(".contact").on("click", function () {
@@ -108,17 +96,11 @@ $("#navContact").on("click", function () {
 //About
 //
 $(".about").on("mouseover", function () {
-    $(".projects").toggleClass('bigW');
-    $(".contact").toggleClass('smallH2');
-    $(".services").toggleClass('smallW2');
-    $(".mid").toggleClass('bigM');
+    set2('services', 'contact', 'projects');
 });
 
 $(".about").on("mouseout", function () {
-    $(".projects").removeClass('bigW');
-    $(".contact").removeClass('smallH2');
-    $(".services").removeClass('smallW2');
-    $(".mid").removeClass('bigM');
+    set2('services', 'contact', 'projects');
 });
 
 $(".about").on("click", function () {
@@ -136,17 +118,11 @@ $("#navAbout").on("click", function () {
 //Services 
 //
 $(".services").on("mouseover", function () {
-    $(".projects").toggleClass('smallW');
-    $(".contact").toggleClass('bigH');
-    $(".about").toggleClass('smallH');
-    $(".mid").toggleClass('smallM');
+    set1('about', 'contact', 'projects');
 });
 
 $(".services").on("mouseout", function () {
-    $(".projects").removeClass('smallW');
-    $(".contact").removeClass('bigH');
-    $(".about").removeClass('smallH');
-    $(".mid").removeClass('smallM');
+    set1('about', 'contact', 'projects');
 });
 
 $(".services").on("click", function () {
@@ -160,19 +136,19 @@ $("#navServices").on("click", function () {
     $(".sCw").attr("style", "display:block !important");
 })
 
-$(".openModal").on("click", function() {
-    $('.modal').attr("style", "display:none !important"); 
-    let child = $('#modal'+event.target.id)
+$(".openModal").on("click", function () {
+    $('.modal').attr("style", "display:none !important");
+    let child = $('#modal' + event.target.id)
     $(child).attr("style", "display:block !important");
     toggleAnimation(child, 'dropDown');
 })
 
-$(".exitModal").on("click", function() {
+$(".exitModal").on("click", function () {
     let parent = $('.exitModal').parent();
     toggleAnimation(parent, 'Out');
     setTimeout(function () {
-    $(parent).attr("style", "display:none !important");  
-    },700);
+        $(parent).attr("style", "display:none !important");
+    }, 700);
 })
 
 //
