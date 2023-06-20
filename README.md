@@ -1,3 +1,3 @@
-Main portfolio - in progress.
+Main portfolio.
 
-Online demo: commming soon.
+Online demo: https://kamilplhh.smallhost.pl (temporarily disabled).
