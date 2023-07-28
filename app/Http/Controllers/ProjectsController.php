@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\projects;
-use App\Models\services;
 use App\Interfaces\HistoryRepositoryInterface;
+use Illuminate\Support\Facades\Http;
 
 class ProjectsController extends Controller
 {
@@ -23,9 +23,9 @@ class ProjectsController extends Controller
         $educations = $this->historyRepository->getEducationHistory();
         $skills = $this->historyRepository->getSkills();
         $projects = Projects::all();
-        $servicesDone = services::where('status', '1')->get();
-        $servicesOutgoing = services::where('status', '0')->get();
+        $joke = Http::get('https://api.chucknorris.io/jokes/random')['value'];
 
-        return view('home', compact('projects', 'jobs', 'educations', 'skills', 'servicesDone', 'servicesOutgoing'));
+        dd($joke);
+        return view('home', compact('projects', 'jobs', 'educations', 'skills', 'joke'));
     }
 }
