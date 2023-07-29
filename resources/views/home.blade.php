@@ -56,45 +56,7 @@
 
     <div class="sCwContent">
         <div class="sCwBlock">
-            <center>
-                <h3>Services currently working on</h3>
-            </center>
-            <div class="sCwData">
-                <ul>
-                    @foreach($servicesOutgoing as $Outgoing)
-                    <li>
-                        <a class="openModal" id="{{ $Outgoing->id }}">{{ $Outgoing->name }}</a>
-                        <div class="modal" id="modal{{ $Outgoing->id }}">
-                            <center>
-                                {{ $Outgoing->description }}
-                            </center>
-                            <i class="fa-regular fa-x fa-xl exitModal"></i>
-                        </div>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-        </div>
-        <div class="sCwBlock">
-            <center>
-                <h3>Services already done</h3>
-            </center>
-            <div class="sCwData">
-                <ul>
-                    @foreach($servicesDone as $Done)
-                    <li>
-                        <a class="openModal" id="{{ $Done->id }}">{{ $Done->name }}</a>
-                        <div class="modal" id="modal{{ $Done->id }}">
-                            <center>
-                                {{ $Done->description }}<br>
-                                <a href="{{ $Done->url }}">Project link</a> 
-                            </center>
-                            <i class="fa-regular fa-x fa-xl exitModal"></i>
-                        </div>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
+            {{ $joke }}
         </div>
     </div>
 </div>

@@ -25,7 +25,6 @@ class ProjectsController extends Controller
         $projects = Projects::all();
         $joke = Http::get('https://api.chucknorris.io/jokes/random')['value'];
 
-        dd($joke);
         return view('home', compact('projects', 'jobs', 'educations', 'skills', 'joke'));
     }
 }
