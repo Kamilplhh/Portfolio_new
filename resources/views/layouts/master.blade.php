@@ -54,7 +54,7 @@
             <div class="col-2 navButton" id="navAbout">ABOUT</div>
             <div class="col-4 navButton" id="navHome">HOME</div>
             <div class="col-2 navButton" id="navContact">CONTACT</div>
-            <div class="col-2 navButton" id="navServices">SERVICES</div>
+            <div class="col-2 navButton" id="navServices">Joke</div>
         </div>
     </div>
     @show

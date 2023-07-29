@@ -22,7 +22,7 @@
 </a>
 
 <div class="services center">
-    SERVICES
+    Joke
 </div>
 
 {{-- Projects section --}}
@@ -55,9 +55,9 @@
     <i class="fa-regular fa-x fa-xl exit"></i>
 
     <div class="sCwContent">
-        <div class="sCwBlock">
-            {{ $joke }}
-        </div>
+        <h3>Random Chuck Norris joke:</h3>
+        {{ $joke }}
+        <button>Get new</button>
     </div>
 </div>
 
