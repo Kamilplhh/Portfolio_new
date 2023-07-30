@@ -39,8 +39,9 @@
                         <h4>Technologies used:</h4>
                     </center>
                     <div class="technologies">
-                        @for ($i = 0; $i <= 6; $i++) <?php $src = 'src' . $i; ?> <img src="{{ url('images/technology/'.$project->technology->$src) }}" alt="abc" onerror="this.style.display='none'">
-                            @endfor
+                        @for ($i = 0; $i <= 6; $i++) 
+                            <?php $src = 'src' . $i; ?> <img src="{{ $project->technology->$src }}" alt="E" onerror="this.style.display='none'" style="width:48px; height:48px; padding-right: 20px">
+                        @endfor
                     </div>
                 </div>
             </div>
