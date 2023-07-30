@@ -66,6 +66,7 @@ $("#jokeButton").click(function () {
 })
 
 function getJoke() {
+    $("#joke").text("Searching...");
     $.ajax({
         url: 'joke',
         type: 'GET',
