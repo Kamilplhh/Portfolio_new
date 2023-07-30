@@ -74,6 +74,7 @@ function getJoke() {
             $("#joke").text(result);
         },
         error: function () {
+            $("#joke").text("API might have maintenance");
             console.log("Something didn't work")
         } 
     });
