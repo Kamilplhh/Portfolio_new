@@ -57,15 +57,23 @@ else {
     }
 }
 
+$(document).ready(function () {
+    getJoke();
+})
+
 $("#jokeButton").click(function () {
+    getJoke();
+})
+
+function getJoke() {
     $.ajax({
         url: 'joke',
         type: 'GET',
         success: function (result) {
-            console.log(result)
+            $("#joke").text(result);
         },
         error: function () {
             console.log("Something didn't work")
         } 
     });
-})
+}

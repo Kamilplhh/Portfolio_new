@@ -22,9 +22,8 @@ class ProjectsController extends Controller
         $educations = $this->historyRepository->getEducationHistory();
         $skills = $this->historyRepository->getSkills();
         $projects = Projects::all();
-        $joke = Http::get('https://api.chucknorris.io/jokes/random')['value'];
 
-        return view('home', compact('projects', 'jobs', 'educations', 'skills', 'joke'));
+        return view('home', compact('projects', 'jobs', 'educations', 'skills'));
     }
 
     public function getJoke()
