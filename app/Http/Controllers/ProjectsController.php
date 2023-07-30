@@ -18,7 +18,6 @@ class ProjectsController extends Controller
 
     public function getData()
     {
-
         $jobs = $this->historyRepository->getJobsHistory();
         $educations = $this->historyRepository->getEducationHistory();
         $skills = $this->historyRepository->getSkills();
@@ -26,5 +25,12 @@ class ProjectsController extends Controller
         $joke = Http::get('https://api.chucknorris.io/jokes/random')['value'];
 
         return view('home', compact('projects', 'jobs', 'educations', 'skills', 'joke'));
+    }
+
+    public function getJoke()
+    {
+        $joke = Http::get('https://api.chucknorris.io/jokes/random')['value'];
+
+        return $joke;
     }
 }

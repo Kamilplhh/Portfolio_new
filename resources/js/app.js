@@ -7,7 +7,7 @@ import '../css/contact.css';
 import '../css/services.css';
 import '../css/homeHover.css';
 import "@fortawesome/fontawesome-free/css/all.css";
-import $ from 'jquery';
+import $, { error } from 'jquery';
 import Typed from 'typed.js';
 window.$ = $;
 
@@ -56,3 +56,16 @@ else {
         slider([{ x: 5 }, { x: -577 }])
     }
 }
+
+$("#jokeButton").click(function () {
+    $.ajax({
+        url: 'joke',
+        type: 'GET',
+        success: function (result) {
+            console.log(result)
+        },
+        error: function () {
+            console.log("Something didn't work")
+        } 
+    });
+})

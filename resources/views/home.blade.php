@@ -57,8 +57,8 @@
 
     <div class="sCwContent">
         <h3>Random Chuck Norris joke:</h3>
-        {{ $joke }}
-        <button>Get new</button>
+        <p id="joke">{{ $joke }}</p>
+        <button id="jokeButton">Get new</button>
     </div>
 </div>
 

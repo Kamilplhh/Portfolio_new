@@ -18,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ProjectsController::class, 'getData']);
 
 Route::post('/send-email', [Contact::class, 'sendEmail'])->name('send.email');
+
+Route::get('joke',[ProjectsController::class, 'getJoke'])->name('joke');
